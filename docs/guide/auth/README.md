@@ -2,7 +2,7 @@
 
 Authentication is how you add your board to Taco. 
 
-- 1. Go to [https://auth.tacobot.app/](https://auth.tacobot.app/) and link your Discord account with your Trello account.
+- 1. Go to [auth.tacobot.app](https://auth.tacobot.app/) and link your Discord account with your Trello account.
 
 Yep. One step and it takes 2 clicks in under a minute.
 
