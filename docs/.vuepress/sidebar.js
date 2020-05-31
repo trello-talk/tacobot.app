@@ -1,5 +1,5 @@
 module.exports = {
-	'/': [
+	'/guide/': [
 		{
 			title: 'Getting Started',
 			children: [
@@ -11,25 +11,25 @@ module.exports = {
 		{
 			title: 'Commands',
 			children: [
-				'/commands/',
-				'/commands/edit/',
-				'/commands/webhooks/',
-				'/commands/viewing/',
+				'/guide/commands/',
+				'/guide/commands/edit/',
+				'/guide/commands/webhooks/',
+				'/guide/commands/viewing/',
 			],
 		},
 		{
 			title: 'Development',
 			children: [
-				'/development/',
-				'/development/self-host/',
+				'/guide/dev/',
+				'/guide/dev/self-host/',
 			],
 		},
 		{
 			title: 'Additional Information',
 			children: [
-				'/other/faq/',
-				'/other/team/',
-				'/other/bots/',
+				'/guide/other/faq/',
+				'/guide/other/team/',
+				'/guide/other/bots/',
 			],
 		},
 	]
