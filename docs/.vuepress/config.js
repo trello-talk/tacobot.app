@@ -29,8 +29,7 @@ const config = {
           bgOpacity: 0.5
         }
       }
-    ],
-    [ '@goy/svg-icons' ]
+    ]
   ],
   themeConfig: {
     search: false,

@@ -41,6 +41,8 @@
     flex-direction column
     flex auto
     justify-content center
+    .buttons a
+      line-height 2
 </style>
 
 <script>
