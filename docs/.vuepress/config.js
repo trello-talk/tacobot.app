@@ -3,6 +3,7 @@ const sidebar = require('./sidebar.js');
 const config = {
   title: 'Taco Bot',
   description: 'The Taco Bot Support/Docs site',
+  main: 'layouts/Layout.vue',
   head: [
     ['link', { rel: 'icon', href: '/logo_happy.png' }],
     ['meta', { name: 'theme-color', content: '#93a01e' }],
