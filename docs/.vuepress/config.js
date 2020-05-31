@@ -4,7 +4,7 @@ const config = {
   title: 'Taco Bot',
   description: 'The Taco Bot Support/Docs site',
   head: [
-    ['link', { rel: 'icon', href: '/new-taco-beta.png' }],
+    ['link', { rel: 'icon', href: '/logo_happy.png' }],
     ['meta', { name: 'theme-color', content: '#93a01e' }],
     ['meta', { name: 'twitter:card', content: 'summary' }],
     ['meta', { name: 'og:title', content: 'Taco Bot' }],
@@ -12,7 +12,7 @@ const config = {
     ['meta', { name: 'og:type', content: 'website' }],
     ['meta', { name: 'og:url', content: 'https://tacobot.app/' }],
     ['meta', { name: 'og:locale', content: 'en_US' }],
-    ['meta', { name: 'og:image', content: '/new-taco-beta.png' }],
+    ['meta', { name: 'og:image', content: '/logo_happy.png' }],
   ],
   plugins: [
     [
@@ -45,7 +45,7 @@ const config = {
     docsDir: 'docs',
     editLinks: true,
     editLinkText: 'Improve this page on GitHub!',
-    logo: '/new-taco-beta.png',
+    logo: '/logo_happy.png',
     smoothScroll: true
   }
 

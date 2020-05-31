@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /new-taco-beta.png
+heroImage: /logo_happy.png
 heroText: Taco Bot
 tagline: Brought to you by Trello Talk
 actionText: Get Started →
