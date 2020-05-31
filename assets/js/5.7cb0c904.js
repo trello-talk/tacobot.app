@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{361:function(n,t,e){"use strict";e.r(t);var s={name:"PersonLink",props:["url","icon","name"]},i=e(45),r=Object(i.a)(s,(function(){var n=this.$createElement,t=this._self._c||n;return t("a",{attrs:{href:this.url,title:this.name}},[t("vp-icon",{attrs:{name:this.icon}})],1)}),[],!1,null,null,null);t.default=r.exports}}]);
