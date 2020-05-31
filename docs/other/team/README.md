@@ -1,6 +1,7 @@
 # The Team
 
 ## Admins
+<ClientOnly>
 <person
   avatar="https://cdn.discordapp.com/avatars/135923847147945985/a_070ba35184aeb8e92b12065333210d5d.png"
   imageClass="rounded"
@@ -24,7 +25,7 @@
   imageClass="rounded"
   name="Yooks"
   subtitle="Policy Manager"/>
-
+</ClientOnly>
 ## Developers
 <person
   avatar="https://avatars2.githubusercontent.com/u/37413895?s=2048&v=4"
