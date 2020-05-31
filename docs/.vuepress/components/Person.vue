@@ -5,7 +5,7 @@
       draggable="false"
       :alt="`${name}'s Avatar`"
       :src="avatar"
-      class="imageClass ? `image-title ${imageClass}` : 'image-title'">
+      :class="imageClass ? `image-title ${imageClass}` : 'image-title'">
     <div class="person-content">
       <h4 :class="avatar || subtitle ? 'title' : 'title minimal'">{{ name }}</h4>
       <p v-if="!!subtitle" class="subtitle">{{ subtitle }}</p>
