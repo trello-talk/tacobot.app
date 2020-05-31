@@ -6,11 +6,9 @@
 
 <style lang="stylus">
 </style>
-<ClientOnly>
 <script>
 export default {
   name: 'PersonLink',
   props: ['url', 'icon', 'name'],
 };
 </script>
-</ClientOnly>
