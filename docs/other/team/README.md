@@ -6,18 +6,15 @@
   imageClass="rounded"
   name="Coolguy3289"
   subtitle="SysAdmin">
-  <PersonLink
-    name="Website"
-    icon="site"
-    url="https://thegamingcorner.net"/>
-  <PersonLink
-    name="GitHub"
-    icon="github"
-    url="https://github.com/Coolguy3289"/>
-  <PersonLink
-    name="Twitter"
-    icon="twitter"
-    url="https://twitter.com/DJCoolguy3289"/>
+  <a title="Website" href="https://thegamingcorner.net">
+    <vp-icon name="site"/>
+  </a>
+  <a title="GitHub" href="https://github.com/Coolguy3289">
+    <vp-icon name="github"/>
+  </a>
+  <a title="Twitter" href="https://twitter.com/DJCoolguy3289">
+    <vp-icon name="twitter"/>
+  </a>
 </person>
 <person
   avatar="https://avatars1.githubusercontent.com/u/16436920?s=2048&v=4"
@@ -35,18 +32,15 @@
   imageClass="rounded"
   name="Snazzah"
   subtitle="Frontend Developer">
-  <PersonLink
-    name="Website"
-    icon="site"
-    url="https://snazzah.com/"/>
-  <PersonLink
-    name="GitHub"
-    icon="github"
-    url="https://github.com/Snazzah"/>
-  <PersonLink
-    name="Twitter"
-    icon="twitter"
-    url="https://twitter.com/Snazzah"/>
+  <a title="Website" href="https://snazzah.com/">
+    <vp-icon name="site"/>
+  </a>
+  <a title="GitHub" href="https://github.com/Snazzah">
+    <vp-icon name="github"/>
+  </a>
+  <a title="Twitter" href="https://twitter.com/Snazzah">
+    <vp-icon name="twitter"/>
+  </a>
 </person>
 
 ## Moderation Staff
