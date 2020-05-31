@@ -21,10 +21,13 @@ const config = {
     ],
     [
       'vuepress-plugin-zooming',
-      { options: {
-        bgColor: 'black',
-        bgOpacity: 0.5
-      } }
+      { 
+        selector: 'img:not(.logo):not([no-zoom])',
+        options: {
+          bgColor: 'black',
+          bgOpacity: 0.5
+        }
+      }
     ],
     [ '@goy/svg-icons' ]
   ],
@@ -48,8 +51,8 @@ const config = {
     logo: '/logo_happy.png',
     smoothScroll: true
   }
-
 }
+
 for (const group of Object.values(config.themeConfig.sidebar)) {
 	for (const section of group) {
 		if (section.collapsable) continue;

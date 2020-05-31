@@ -1,13 +1,13 @@
 <template>
   <div class="person">
     <img
-      v-if="!!avatar"
+      v-if="!!avatar" no-zoom
       draggable="false"
-      v-bind:alt="`${name}'s Avatar`"
-      v-bind:src="avatar"
-      v-bind:class="imageClass ? `image-title ${imageClass}` : 'image-title'">
+      :alt="`${name}'s Avatar`"
+      :src="avatar"
+      class="imageClass ? `image-title ${imageClass}` : 'image-title'">
     <div class="person-content">
-      <h4 v-bind:class="avatar || subtitle ? 'title' : 'title minimal'">{{ name }}</h4>
+      <h4 :class="avatar || subtitle ? 'title' : 'title minimal'">{{ name }}</h4>
       <p v-if="!!subtitle" class="subtitle">{{ subtitle }}</p>
       <div class="buttons"><slot/></div>
     </div>
