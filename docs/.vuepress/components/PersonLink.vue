@@ -1,4 +1,3 @@
-<ClientOnly>
 <template>
   <a v-bind:href="url" v-bind:title="name">
     <vp-icon v-bind:name="icon" />
@@ -7,7 +6,7 @@
 
 <style lang="stylus">
 </style>
-
+<ClientOnly>
 <script>
 export default {
   name: 'PersonLink',
