@@ -1,6 +1,6 @@
 # Webhooks
 
-Webhooks are a way to get messages/notifications through discord, about any changes made to a board you have authorised on the bot (See [Auth Page](/guide/auth/)). 
+Webhooks are a way to get messages/notifications through discord, about any changes made to a board you have authorised on the bot (See [Authentication Page](/guide/auth/)). 
 
 To get started, go to the settings for the channel you want to receive the messages in (click on the little gear icon next to the name), go to webhooks, then create a new webhook. 
 At this point, feel free to update the name & profile picture of the webhook, then copy the webhook URL. 

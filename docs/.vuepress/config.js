@@ -4,23 +4,29 @@ const config = {
   title: 'Taco Bot',
   description: 'The Taco Bot Support/Docs site',
   head: [
-	['link', { rel: 'icon', href: '/favicon.png' }],
-	['meta', { name: 'theme-color', content: '#353b48' }],
-	['meta', { name: 'twitter:card', content: 'summary' }],
-	['meta', { name: 'og:title', content: 'Taco Bot Site' }],
-	['meta', { name: 'og:description', content: 'The Taco Bot Support/Docs site.' }],
-	['meta', { name: 'og:type', content: 'website' }],
-	['meta', { name: 'og:url', content: 'https://tacobot.app/' }],
-	['meta', { name: 'og:locale', content: 'en_US' }],
-	['meta', { name: 'og:image', content: '/meta-image.png' }],
+    ['link', { rel: 'icon', href: '/new-taco-beta.png' }],
+    ['meta', { name: 'theme-color', content: '#93a01e' }],
+    ['meta', { name: 'twitter:card', content: 'summary' }],
+    ['meta', { name: 'og:title', content: 'Taco Bot' }],
+    ['meta', { name: 'og:description', content: 'The Taco Bot Support/Docs site.' }],
+    ['meta', { name: 'og:type', content: 'website' }],
+    ['meta', { name: 'og:url', content: 'https://tacobot.app/' }],
+    ['meta', { name: 'og:locale', content: 'en_US' }],
+    ['meta', { name: 'og:image', content: '/new-taco-beta.png' }],
   ],
   plugins: [
     [
       '@vuepress/google-analytics',
-      {
-        'ga': 'UA-167866550-1' // UA-00000000-0
-      }
-    ]
+      { ga: 'UA-167866550-1' }
+    ],
+    [
+      'vuepress-plugin-zooming',
+      { options: {
+        bgColor: 'black',
+        bgOpacity: 0.5
+      } }
+    ],
+    [ '@goy/svg-icons' ]
   ],
   themeConfig: {
     search: false,
@@ -38,7 +44,9 @@ const config = {
     docsRepo: 'trello-talk/tacobot.app',
     docsDir: 'docs',
     editLinks: true,
-    editLinkText: 'Improve this page on GitHub!'
+    editLinkText: 'Improve this page on GitHub!',
+    logo: '/new-taco-beta.png',
+    smoothScroll: true
   }
 
 }
