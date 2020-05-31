@@ -1,3 +1,4 @@
+<ClientOnly>
 <template>
   <a v-bind:href="url" v-bind:title="name">
     <vp-icon v-bind:name="icon" />
@@ -13,3 +14,4 @@ export default {
   props: ['url', 'icon', 'name'],
 };
 </script>
+</ClientOnly>
