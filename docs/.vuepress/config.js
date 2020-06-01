@@ -8,7 +8,7 @@ const config = {
     // Manifest
     ['link', { rel: 'icon', href: '/logo_happy.png' }],
     ['link', { rel: 'manifest', href: '/manifest.json' }],
-    ['link', { name: 'viewport', content: 'width=device-width, initial-scale=1' }],
+    ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1' }],
 
     // Icons
     ['link', { rel: 'mask-icon', href: '/logo/safari-pinned-tab.svg', color: '#93a01e' }],
