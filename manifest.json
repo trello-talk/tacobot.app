@@ -1,0 +1,29 @@
+{
+  "short_name": "Taco",
+  "name": "Taco Bot",
+  "description": "The Taco Bot Support/Docs site",
+  "icons": [
+    {
+      "src": "/logo/android-chrome-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/logo/android-chrome-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/?source=pwa",
+  "background_color": "#ffffff",
+  "display": "minimal-ui",
+  "scope": "/",
+  "theme_color": "#93a01e",
+  "shortcuts": [
+    {
+      "name": "Guide",
+      "description": "Read the guide for Taco",
+      "url": "/guide"
+    }
+  ]
+}
