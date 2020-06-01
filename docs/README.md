@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /logo/android-chrome-512x512.png
+heroImage: /logo_happy.svg
 heroText: Taco
 tagline: Brought to you by Trello Talk
 actionText: Get Started →

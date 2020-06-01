@@ -70,7 +70,7 @@ const config = {
     docsDir: 'docs',
     editLinks: true,
     editLinkText: 'Improve this page on GitHub!',
-    logo: '/logo_happy.png',
+    logo: '/logo_happy.svg',
     smoothScroll: true
   }
 }

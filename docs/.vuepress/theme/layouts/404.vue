@@ -1,7 +1,7 @@
 <template>
   <div class="theme-container error-page-outer">
     <div class="theme-default-content error-page">
-      <img class="sad-taco" no-zoom src="/logo_sad.png">
+      <img class="sad-taco" no-zoom src="/logo_sad.svg">
       <div class="content">
         <h1 class="title">404</h1>
         <p class="subtitle">Not Found.</p>
