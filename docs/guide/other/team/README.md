@@ -2,7 +2,7 @@
 
 ## Admins
 <Person
-  avatar="https://cdn.discordapp.com/avatars/135923847147945985/a_070ba35184aeb8e92b12065333210d5d.png"
+  avatar="https://cdn.discordapp.com/avatars/135923847147945985/a_070ba35184aeb8e92b12065333210d5d.png?size=128"
   imageClass="rounded"
   name="Coolguy3289"
   subtitle="SysAdmin">
@@ -17,14 +17,14 @@
   </a>
 </Person>
 <Person
-  avatar="https://avatars1.githubusercontent.com/u/16436920?s=2048&v=4"
+  avatar="https://avatars1.githubusercontent.com/u/16436920?s=80&v=4"
   imageClass="rounded"
   name="Yooks"
   subtitle="Policy Manager"/>
 
 ## Developers
 <Person
-  avatar="https://avatars2.githubusercontent.com/u/37413895?s=2048&v=4"
+  avatar="https://avatars2.githubusercontent.com/u/37413895?s=80&v=4"
   imageClass="rounded"
   name="Yamboy"
   subtitle="Backend Developer"/>
@@ -46,17 +46,17 @@
 
 ## Moderation Staff
 <Person 
-  avatar="https://cdn.discordapp.com/avatars/129693097431924736/a_e5f8c34d381612f3c7db389ffb283067.png"
+  avatar="https://cdn.discordapp.com/avatars/129693097431924736/a_e5f8c34d381612f3c7db389ffb283067.png?size=128"
   imageClass="rounded"
   name="Mystic"
   subtitle="Moderator and Support Staff"/>
 <Person
-  avatar="https://cdn.discordapp.com/avatars/162381280330121216/e48ef347c9026e48fff482a88ca7ba1d.png"
+  avatar="https://cdn.discordapp.com/avatars/162381280330121216/e48ef347c9026e48fff482a88ca7ba1d.png?size=128"
   imageClass="rounded"
   name="Clab"
   subtitle="Moderator and Support Staff"/>
 <Person
-  avatar="https://cdn.discordapp.com/avatars/290384363076714496/c498c6ca571ecede3bd9f0abbbbcfa7c.png"
+  avatar="https://cdn.discordapp.com/avatars/290384363076714496/c498c6ca571ecede3bd9f0abbbbcfa7c.png?size=128"
   imageClass="rounded"
   name="Techguy9078"
   subtitle="Moderator and Support Staff"/>

@@ -1,7 +1,7 @@
 ---
 home: true
-heroImage: /logo_happy.png
-heroText: Taco Bot
+heroImage: /logo/android-chrome-512x512.png
+heroText: Taco
 tagline: Brought to you by Trello Talk
 actionText: Get Started →
 actionLink: /guide/
