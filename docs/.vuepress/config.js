@@ -51,7 +51,9 @@ const config = {
           bgOpacity: 0.5
         }
       }
-    ]
+    ],
+    '@vuepress/pwa',
+    '@vuepress/last-updated'
   ],
   themeConfig: {
     search: false,
