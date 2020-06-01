@@ -45,7 +45,7 @@ const config = {
     [
       'vuepress-plugin-zooming',
       { 
-        selector: 'img:not(.logo):not([no-zoom])',
+        selector: 'img:not(.logo):not([alt="hero"]):not([no-zoom])',
         options: {
           bgColor: 'black',
           bgOpacity: 0.5
