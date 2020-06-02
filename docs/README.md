@@ -21,5 +21,10 @@ features:
 - title: Interactive Setup
   image: /placeholder_discord.png
   details: Easy to follow and easy to use prompts setup to manage Taco in your Discord server.
+slides:
+- image: /placeholder_discord.png
+  caption: Something, something about the GIF.
+- image: /placeholder_discord.png
+  caption: Another something, something about the GIF.
 footer: true
 ---

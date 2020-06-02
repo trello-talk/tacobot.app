@@ -5,11 +5,15 @@
   >
     <header class="landing">
       <div class="slideshow">
-        <div class="picture-outer">
-          <span class="aspect-trick"></span>
-          <img class="picture" src="/placeholder_discord.png" />
-        </div>
-        <span class="caption">Something, something about the GIF.</span>
+        <carousel :autoplay="true" :perPage="1" :paginationEnabled="true">
+          <slide v-for="slide in data.slides">
+            <div class="picture-outer">
+              <span class="aspect-trick"></span>
+              <img class="picture" :src="slide.image" :data-original="slide.ogImage || slide.image" no-zoom />
+            </div>
+            <span class="caption">{{ slide.caption }}</span>
+          </slide>
+        </carousel>
       </div>
       <div class="hero">
         <img no-zoom src="/logo_happy.svg" />
@@ -39,7 +43,7 @@
         <h2>{{ feature.title }}</h2>
         <div class="picture-outer" v-if="feature.image">
           <span class="aspect-trick"></span>
-          <img class="picture" :src="feature.image" />
+          <img class="picture" :src="feature.image" :data-original="feature.ogImage || feature.image" />
         </div>
         <p>{{ feature.details }}</p>
       </div>
@@ -52,9 +56,10 @@
 <script>
 import NavLink from '@parent-theme/components/NavLink.vue'
 import Footer from '@theme/components/Footer.vue'
+import { Carousel, Slide } from 'vue-carousel'
 export default {
   name: 'Home',
-  components: { NavLink, Footer },
+  components: { NavLink, Footer, Carousel, Slide },
   computed: {
     data () {
       return this.$page.frontmatter
@@ -84,6 +89,12 @@ export default {
     .slideshow
       width 50%
       align-self center
+      .VueCarousel-dot
+        outline none
+        &[aria-selected="false"]
+          background-color $imageBackground !important
+        &[aria-selected="true"]
+          background-color $textColor !important
       .picture-outer
         width auto
         position relative
