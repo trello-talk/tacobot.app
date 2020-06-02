@@ -1,0 +1,204 @@
+<template>
+  <main
+    class="home"
+    aria-labelledby="main-title"
+  >
+    <header class="landing">
+      <div class="slideshow">
+        <div class="picture-outer">
+          <span class="aspect-trick"></span>
+          <img class="picture" src="/placeholder_discord.png" />
+        </div>
+        <span class="caption">Something, something about the GIF.</span>
+      </div>
+      <div class="hero">
+        <img no-zoom src="/logo_happy.svg" />
+        <h1>{{ data.heroText || $title || 'Hello' }}</h1>
+        <p class="description">{{ data.tagline || $description || 'Welcome to your VuePress site' }}</p>
+        <p class="action-buttons" v-if="data.actionButtons && data.actionButtons.length">
+          <NavLink
+            class="action-button"
+            v-for="abtn in data.actionButtons"
+            :class="abtn.primary ? 'primary': ''"
+            :item="abtn"
+          />
+        </p>
+      </div>
+    </header>
+
+    <hr />
+
+    <div
+      v-if="data.features && data.features.length"
+      class="features"
+    >
+      <div
+        v-for="feature in data.features"
+        class="feature"
+      >
+        <h2>{{ feature.title }}</h2>
+        <div class="picture-outer" v-if="feature.image">
+          <span class="aspect-trick"></span>
+          <img class="picture" :src="feature.image" />
+        </div>
+        <p>{{ feature.details }}</p>
+      </div>
+    </div>
+
+    <Footer v-if="data.footer && $site.themeConfig.footer" />
+  </main>
+</template>
+
+<script>
+import NavLink from '@parent-theme/components/NavLink.vue'
+import Footer from '@theme/components/Footer.vue'
+export default {
+  name: 'Home',
+  components: { NavLink, Footer },
+  computed: {
+    data () {
+      return this.$page.frontmatter
+    },
+    actionLink () {
+      return {
+        link: this.data.actionLink,
+        text: this.data.actionText
+      }
+    }
+  }
+}
+</script>
+
+<style lang="stylus">
+.home
+  padding $navbarHeight 2.5rem 0
+  max-width $homePageWidth
+  margin 0 auto
+  display block
+  .landing
+    display flex
+    flex-direction row
+    justify-content space-between
+    width calc(100% - 5rem)
+    margin-top 2.5rem
+    .slideshow
+      width 50%
+      align-self center
+      .picture-outer
+        width auto
+        position relative
+      .caption
+        display block
+        color $imageBackground
+        font-weight 500
+        font-style italic
+    .hero
+      display flex
+      flex-direction column
+      text-align right
+      width 50%
+      margin-left 2rem
+      img
+        object-fit contain
+        width 50%
+      h1
+        font-size 3rem
+        margin 0
+      .description
+        width 100%
+        font-size 1.6rem
+        line-height 1.3
+        color $altTextColor
+        margin 0
+      .action-buttons
+        display flex
+        justify-content space-evenly
+        align-self flex-end
+        flex-wrap wrap
+        a + a
+          margin-right .5rem
+    .action-button
+      display inline-block
+      font-size 1.2rem
+      color $accentColor
+      padding 0.8rem 1.6rem
+      box-sizing border-box
+      & + .action-button
+        margin-left .5rem
+      &:hover
+        text-decoration underline
+      &.primary
+        color #fff
+        background-color $accentColor
+        border-radius 4px
+        border-bottom 1px solid darken($accentColor, 10%)
+        &:hover
+          background-color lighten($accentColor, 10%)
+          text-decoration none
+  .picture-outer
+    background-color $imageBackground
+    border 3px solid $imageBackground
+    width auto
+    position relative
+    .aspect-trick
+      display block
+      width 100%
+      padding-top 56.25%
+      height 0
+    .picture
+      object-fit contain
+      width 100%
+      height 100%
+      margin-top -56.25%
+      margin-bottom -3px
+  .features
+    display flex
+    flex-direction row
+    width calc(100% - 5rem)
+    flex-flow wrap
+    justify-content center
+    .feature
+      max-width calc(calc(100% / 3) - 20px)
+      margin 10px 0
+      padding 0 10px
+      h2
+        font-size 1.5rem
+        margin 0
+        padding 0
+        border none
+        font-weight 500
+      p
+        margin 0
+        color $altTextColor
+        font-weight 500
+        line-height 1
+      .picture-outer
+        margin 10px 0
+@media (max-width: $MQNarrow)
+  .home .landing
+    .slideshow
+      width 60%
+    .hero
+      width 40%
+      h1
+        font-size: 2rem;
+      .description
+        font-size: 1.3rem;
+@media (max-width: $MQMobile)
+  .home
+    padding $navbarHeight 1.5rem 0
+    .landing
+      flex-direction column-reverse
+      width 100%
+      .slideshow
+        width 100%
+      .hero
+        width unset
+        margin-left 0
+        margin-bottom 1rem
+    .features
+      flex-direction column
+      width unset
+      .feature
+        max-width 100%
+</style>

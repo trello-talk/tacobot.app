@@ -48,7 +48,8 @@ const config = {
         selector: 'img:not(.logo):not([alt="hero"]):not([no-zoom])',
         options: {
           bgColor: 'black',
-          bgOpacity: 0.5
+          bgOpacity: 0.5,
+          scaleBase: 0.8
         }
       }
     ],
@@ -58,7 +59,6 @@ const config = {
   themeConfig: {
     search: false,
     nav: [
-      { text: 'Home', link: '/' },
       { text: 'Guide', link: '/guide/' },
       { text: 'Support', link: 'https://discord.gg/fJrZZ7V' },
       { text: 'Invite Taco', link: 'https://discord.com/oauth2/authorize?client_id=617830404103077928&permissions=536931392&scope=bot' }
@@ -73,7 +73,55 @@ const config = {
     editLinks: true,
     editLinkText: 'Improve this page on GitHub!',
     logo: '/logo_happy.svg',
-    smoothScroll: true
+    smoothScroll: true,
+    footer: {
+      columns: [
+        {
+          title: 'Consider donating!',
+          rows: [{
+            icon: 'github',
+            link: '/'
+          },
+          {
+            icon: 'github',
+            link: '/'
+          }]
+        },
+        {
+          title: 'Social Links',
+          rows: [{
+            icon: 'twitter',
+            title: 'Twitter',
+            link: '/'
+          },
+          {
+            icon: 'github',
+            link: 'https://github.com/trello-talk/'
+          }]
+        },
+        {
+          title: 'More',
+          rows: [{
+            text: 'FAQ',
+            link: '/guide/other/faq/'
+          },
+          {
+            text: 'Team',
+            link: '/guide/other/team/'
+          },
+          {
+            text: 'Bot Invite',
+            link: '/'
+          }]
+        }
+      ],
+      finePrints: [
+        'This project is licenced under the GNU General Public License v3.0.',
+        'Trello Talk and the Taco Bot is not affiliated with Trello Inc. or Taco the Husky.',
+        '',
+        'Copyright © 2020 Trello Talk Team'
+      ]
+    }
   }
 }
 
