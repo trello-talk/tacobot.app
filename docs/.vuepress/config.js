@@ -79,12 +79,14 @@ const config = {
         {
           title: 'Consider donating!',
           rows: [{
-            icon: 'github',
-            link: '/'
+            icon: 'patreon',
+            title: 'Patreon',
+            link: 'https://www.patreon.com/trello_talk'
           },
           {
-            icon: 'github',
-            link: '/'
+            icon: 'kofi',
+            title: 'Ko-fi',
+            link: 'https://ko-fi.com/trello_talk'
           }]
         },
         {
@@ -92,7 +94,7 @@ const config = {
           rows: [{
             icon: 'twitter',
             title: 'Twitter',
-            link: '/'
+            link: 'https://twitter.com/TacoBotDiscord/'
           },
           {
             icon: 'github',
