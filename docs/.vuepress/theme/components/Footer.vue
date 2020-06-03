@@ -60,9 +60,9 @@ export default {
       flex-direction column
       .col-title
         margin-bottom 5px
-        padding 0 3px
       .links
         display flex
+        align-self center
         &.flex-down
           flex-direction column
         a
@@ -74,7 +74,6 @@ export default {
               width 24px
               height 24px
           &.nav-link
-            padding 0 3px
             & + a.nav-link
               margin-top 5px
   .fine-print

@@ -84,12 +84,15 @@ export default {
     .slideshow
       width 50%
       align-self center
-      .VueCarousel-dot
-        outline none
-        &[aria-selected="false"]
-          background-color $imageBackground !important
-        &[aria-selected="true"]
-          background-color $textColor !important
+      .VueCarousel-dot-container
+        margin-top 1rem !important
+        .VueCarousel-dot
+          margin-top 0 !important
+          outline none
+          &[aria-selected="false"]
+            background-color $imageBackground !important
+          &[aria-selected="true"]
+            background-color $textColor !important
       .picture-outer
         width auto
         position relative
@@ -175,7 +178,7 @@ export default {
         margin 0
         color $altTextColor
         font-weight 500
-        line-height 1
+        line-height 1.2
       .picture-outer
         margin 10px 0
 @media (max-width: $MQNarrow)
