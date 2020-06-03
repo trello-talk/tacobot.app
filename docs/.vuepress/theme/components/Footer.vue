@@ -48,8 +48,7 @@ export default {
   background-size contain
   background-position right
   padding 1rem
-  width calc(100% + 3rem)
-  margin-left -2.5rem
+  width calc(100% - 2rem)
   margin-top 5rem
   .columns
     display flex
@@ -66,13 +65,14 @@ export default {
         display flex
         &.flex-down
           flex-direction column
-        svg
-          width 24px
-          height 24px
         a
           font-weight normal
-          &.with-icon + a.with-icon
-            margin-left 5px
+          &.with-icon
+            & + a.with-icon
+              margin-left 5px
+            & > svg
+              width 24px
+              height 24px
           &.nav-link
             padding 0 3px
             & + a.nav-link
@@ -86,8 +86,6 @@ export default {
 @media (max-width: $MQMobile)
   .footer
     background-image none
-    width calc(100% + 1rem)
-    margin-left -1.5rem
     .columns
       flex-direction column
       align-items center

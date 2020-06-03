@@ -52,8 +52,6 @@
         <p>{{ feature.details }}</p>
       </div>
     </div>
-
-    <Footer v-if="data.footer && $site.themeConfig.footer" />
   </main>
 </template>
 
@@ -67,12 +65,6 @@ export default {
   computed: {
     data () {
       return this.$page.frontmatter
-    },
-    actionLink () {
-      return {
-        link: this.data.actionLink,
-        text: this.data.actionText
-      }
     }
   }
 }

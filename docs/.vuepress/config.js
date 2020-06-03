@@ -111,7 +111,7 @@ const config = {
           },
           {
             text: 'Bot Invite',
-            link: '/'
+            link: 'https://discord.com/oauth2/authorize?client_id=617830404103077928&permissions=536931392&scope=bot'
           }]
         }
       ],
