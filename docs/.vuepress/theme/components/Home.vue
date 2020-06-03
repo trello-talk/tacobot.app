@@ -6,7 +6,7 @@
     <header class="landing">
       <div class="slideshow">
         <ClientOnly>
-          <carousel :autoplay="true" :perPage="1" :paginationEnabled="true">
+          <carousel :autoplay="true" :perPage="1" :paginationEnabled="true" :autoplayTimeout="10000" :loop="true">
             <slide v-for="slide in data.slides">
               <div class="picture-outer">
                 <img class="picture" :src="slide.image" :data-original="slide.ogImage || slide.image" no-zoom />
@@ -17,9 +17,13 @@
         </ClientOnly>
       </div>
       <div class="hero">
-        <img no-zoom src="/logo_happy.svg" />
-        <h1>{{ data.heroText || $title || 'Hello' }}</h1>
-        <p class="description">{{ data.tagline || $description || 'Welcome to your VuePress site' }}</p>
+        <div class="mobile-wrapper">
+          <img no-zoom src="/logo_happy.svg" />
+          <div class="hero-text">
+            <h1>{{ data.heroText || $title || 'Hello' }}</h1>
+            <p class="description">{{ data.tagline || $description || 'Welcome to your VuePress site' }}</p>
+          </div>
+        </div>
         <p class="action-buttons" v-if="data.actionButtons && data.actionButtons.length">
           <NavLink
             class="action-button"
@@ -108,18 +112,21 @@ export default {
       text-align right
       width 50%
       margin-left 2rem
-      img
-        object-fit contain
-        width 50%
-      h1
-        font-size 3rem
-        margin 0
-      .description
-        width 100%
-        font-size 1.6rem
-        line-height 1.3
-        color $altTextColor
-        margin 0
+      .mobile-wrapper
+        display flex
+        flex-direction column
+        img
+          object-fit contain
+          width 50%
+        h1
+          font-size 3rem
+          margin 0
+        .description
+          width 100%
+          font-size 1.6rem
+          line-height 1.3
+          color $altTextColor
+          margin 0
       .action-buttons
         display flex
         justify-content space-evenly
@@ -186,15 +193,18 @@ export default {
         width 60%
       .hero
         width 40%
-        h1
-          font-size: 2rem;
-        .description
-          font-size: 1.3rem;
+        .mobile-wrapper
+          h1
+            font-size 2rem
+          .description
+            font-size 1.3rem
+      .action-button
+        font-size 1rem
     .features .feature
       h2
-        font-size: 1.2rem;
+        font-size 1.2rem
       p
-        font-size: 0.8rem;
+        font-size 0.8rem
 @media (max-width: $MQMobile)
   .home
     padding $navbarHeight 1.5rem 0
@@ -207,13 +217,23 @@ export default {
         width unset
         margin-left 0
         margin-bottom 1rem
+        .mobile-wrapper
+          flex-direction row
+          align-items center
+          .hero-text
+            margin-left 5%
+      .action-buttons
+        align-items center
+        width 100%
+        .action-button
+          padding 0.4rem 1rem
     .features
       flex-direction column
       width unset
       .feature
         max-width 100%
         h2
-          font-size: 1.5rem;
+          font-size 1.5rem
         p
-          font-size: 1rem;
+          font-size 1rem
 </style>
