@@ -5,14 +5,16 @@
   >
     <header class="landing">
       <div class="slideshow">
-        <carousel :autoplay="true" :perPage="1" :paginationEnabled="true">
-          <slide v-for="slide in data.slides">
-            <div class="picture-outer">
-              <img class="picture" :src="slide.image" :data-original="slide.ogImage || slide.image" no-zoom />
-            </div>
-            <span class="caption">{{ slide.caption }}</span>
-          </slide>
-        </carousel>
+        <ClientOnly>
+          <carousel :autoplay="true" :perPage="1" :paginationEnabled="true">
+            <slide v-for="slide in data.slides">
+              <div class="picture-outer">
+                <img class="picture" :src="slide.image" :data-original="slide.ogImage || slide.image" no-zoom />
+              </div>
+              <span class="caption">{{ slide.caption }}</span>
+            </slide>
+          </carousel>
+        </ClientOnly>
       </div>
       <div class="hero">
         <img no-zoom src="/logo_happy.svg" />
@@ -54,7 +56,7 @@
 <script>
 import NavLink from '@parent-theme/components/NavLink.vue'
 import Footer from '@theme/components/Footer.vue'
-import { Carousel, Slide } from 'vue-carousel'
+const { Carousel, Slide } = globalThis.window ? require('vue-carousel') : {}
 export default {
   name: 'Home',
   components: { NavLink, Footer, Carousel, Slide },
