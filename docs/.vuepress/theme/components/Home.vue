@@ -8,7 +8,6 @@
         <carousel :autoplay="true" :perPage="1" :paginationEnabled="true">
           <slide v-for="slide in data.slides">
             <div class="picture-outer">
-              <span class="aspect-trick"></span>
               <img class="picture" :src="slide.image" :data-original="slide.ogImage || slide.image" no-zoom />
             </div>
             <span class="caption">{{ slide.caption }}</span>
@@ -42,7 +41,6 @@
       >
         <h2>{{ feature.title }}</h2>
         <div class="picture-outer" v-if="feature.image">
-          <span class="aspect-trick"></span>
           <img class="picture" :src="feature.image" :data-original="feature.ogImage || feature.image" />
         </div>
         <p>{{ feature.details }}</p>
@@ -84,7 +82,6 @@ export default {
     display flex
     flex-direction row
     justify-content space-between
-    width calc(100% - 5rem)
     margin-top 2.5rem
     .slideshow
       width 50%
@@ -134,6 +131,8 @@ export default {
       color $accentColor
       padding 0.8rem 1.6rem
       box-sizing border-box
+      svg
+        display none
       & + .action-button
         margin-left .5rem
       &:hover
@@ -151,21 +150,14 @@ export default {
     border 3px solid $imageBackground
     width auto
     position relative
-    .aspect-trick
-      display block
-      width 100%
-      padding-top 56.25%
-      height 0
     .picture
       object-fit contain
       width 100%
       height 100%
-      margin-top -56.25%
       margin-bottom -3px
   .features
     display flex
     flex-direction row
-    width calc(100% - 5rem)
     flex-flow wrap
     justify-content center
     .feature
@@ -186,15 +178,21 @@ export default {
       .picture-outer
         margin 10px 0
 @media (max-width: $MQNarrow)
-  .home .landing
-    .slideshow
-      width 60%
-    .hero
-      width 40%
-      h1
-        font-size: 2rem;
-      .description
-        font-size: 1.3rem;
+  .home
+    .landing
+      .slideshow
+        width 60%
+      .hero
+        width 40%
+        h1
+          font-size: 2rem;
+        .description
+          font-size: 1.3rem;
+    .features .feature
+      h2
+        font-size: 1.2rem;
+      p
+        font-size: 0.8rem;
 @media (max-width: $MQMobile)
   .home
     padding $navbarHeight 1.5rem 0
@@ -212,4 +210,8 @@ export default {
       width unset
       .feature
         max-width 100%
+        h2
+          font-size: 1.5rem;
+        p
+          font-size: 1rem;
 </style>
