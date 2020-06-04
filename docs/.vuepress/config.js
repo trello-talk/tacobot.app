@@ -43,7 +43,7 @@ const config = {
       { ga: 'UA-167866550-1' }
     ],
     [
-      'vuepress-plugin-zooming',
+      'zooming',
       { 
         selector: 'img:not(.logo):not([alt="hero"]):not([no-zoom])',
         options: {
@@ -54,7 +54,18 @@ const config = {
       }
     ],
     '@vuepress/pwa',
-    '@vuepress/last-updated'
+    '@vuepress/last-updated',
+    [
+      require('./redirect.js'),
+      [
+        { url: 'https://discord.com/oauth2/authorize?client_id=617830404103077928&permissions=536931392&scope=bot',
+          aliases: ['/invite/', '/bot/'] },
+        { url: 'https://discord.gg/fJrZZ7V',
+          aliases: ['/serverinvite/', '/support/', '/server/'] },
+        { url: 'https://auth.tacobot.app/',
+          aliases: ['/auth/', '/authentication/'] },
+      ]
+    ]
   ],
   themeConfig: {
     search: false,

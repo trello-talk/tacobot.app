@@ -1,3 +1,8 @@
+---
+aliases:
+- /faq/
+---
+
 # Frequently Asked Questions
 
 Commmonly asked questions are addressed below. Others will be added as we encounter them. 

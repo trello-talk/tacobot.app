@@ -1,3 +1,8 @@
+---
+aliases:
+- /team/
+---
+
 # The Team
 
 ## Admins

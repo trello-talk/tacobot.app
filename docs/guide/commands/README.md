@@ -1,3 +1,9 @@
+---
+aliases:
+- /commands/
+- /cmds/
+---
+
 # Taco Bot Command List
 
 ## General
