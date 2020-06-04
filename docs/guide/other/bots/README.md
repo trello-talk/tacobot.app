@@ -26,7 +26,7 @@ aliases:
 </Person>
 
 <Person
-  avatar="/logo_happy.svg"
+  avatar="/logo_nightly_happy.svg"
   imageClass="large"
   name="Taco Nightly"
   subtitle="The bleeding edge version of Taco Bot. New features arrive here first, but data may be changed without notice.">
