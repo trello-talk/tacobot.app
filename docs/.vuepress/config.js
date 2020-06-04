@@ -106,12 +106,12 @@ const config = {
           rows: [{
             icon: 'patreon',
             title: 'Patreon',
-            link: '/patreon/'
+            link: '/patreon'
           },
           {
             icon: 'kofi',
             title: 'Ko-fi',
-            link: '/kofi/'
+            link: '/kofi'
           }]
         },
         {
@@ -119,11 +119,12 @@ const config = {
           rows: [{
             icon: 'twitter',
             title: 'Twitter',
-            link: '/twitter/'
+            link: '/twitter'
           },
           {
             icon: 'github',
-            link: '/github/'
+            title: 'GitHub',
+            link: '/github'
           }]
         },
         {
