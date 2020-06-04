@@ -56,7 +56,7 @@
 </template>
 
 <script>
-import NavLink from '@parent-theme/components/NavLink.vue'
+import NavLink from '@theme/components/NavLink.vue'
 import Footer from '@theme/components/Footer.vue'
 const { Carousel, Slide } = globalThis.window ? require('vue-carousel') : {}
 export default {

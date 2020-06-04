@@ -34,15 +34,23 @@ function getAliases (options, ctx) {
   return aliasArray;
 }
 
+function getAbsLink (options, ctx, link) {
+  const alias = getAliases(options, ctx).find(link => link.aliases.includes(link));
+  return alias ? alias.url : link;
+}
+
 module.exports = (options, ctx) => ({
   name: 'redirect-pages',
+  extendPageData($page) {
+    Object.assign($page.frontmatter, { _aliases: getAliases(options, ctx) });
+  },
   beforeDevServer(app) {
     getAliases(options, ctx).forEach(({ url, aliases }) => 
       aliases.forEach(alias => 
         app.get(alias, (_, res) => res.redirect(url)))
     );
   },
-  generated () {
+  generated() {
     const { outDir } = ctx;
 
     getAliases(options, ctx).forEach(({ url, aliases }) => {

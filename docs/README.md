@@ -5,7 +5,7 @@ heroText: Taco
 tagline: Manage Trello boards straight from Discord!
 actionButtons:
 - text: Join the support server!
-  link: https://discord.gg/fJrZZ7V
+  link: /support/
 - text: Get Started →
   link: /guide/
   primary: true

@@ -64,6 +64,16 @@ const config = {
           aliases: ['/serverinvite/', '/support/', '/server/'] },
         { url: 'https://auth.tacobot.app/',
           aliases: ['/auth/', '/authentication/'] },
+        { url: 'https://www.patreon.com/trello_talk',
+          aliases: ['/patreon/'] },
+        { url: 'https://ko-fi.com/trello_talk',
+          aliases: ['/kofi/', '/ko-fi/'] },
+        { url: 'https://github.com/trello-talk/TrelloBot',
+          aliases: ['/source/'] },
+        { url: 'https://github.com/trello-talk',
+          aliases: ['/github/'] },
+        { url: 'https://twitter.com/TacoBotDiscord/',
+          aliases: ['/twitter/'] },
       ]
     ]
   ],
@@ -71,8 +81,8 @@ const config = {
     search: false,
     nav: [
       { text: 'Guide', link: '/guide/' },
-      { text: 'Support', link: 'https://discord.gg/fJrZZ7V' },
-      { text: 'Invite Taco', link: 'https://discord.com/oauth2/authorize?client_id=617830404103077928&permissions=536931392&scope=bot' }
+      { text: 'Support', link: '/support/' },
+      { text: 'Invite Taco', link: '/bot/' }
     ],
     sidebar,
     nextLinks: true,
@@ -92,12 +102,12 @@ const config = {
           rows: [{
             icon: 'patreon',
             title: 'Patreon',
-            link: 'https://www.patreon.com/trello_talk'
+            link: '/patreon/'
           },
           {
             icon: 'kofi',
             title: 'Ko-fi',
-            link: 'https://ko-fi.com/trello_talk'
+            link: '/kofi/'
           }]
         },
         {
@@ -105,11 +115,11 @@ const config = {
           rows: [{
             icon: 'twitter',
             title: 'Twitter',
-            link: 'https://twitter.com/TacoBotDiscord/'
+            link: '/twitter/'
           },
           {
             icon: 'github',
-            link: 'https://github.com/trello-talk/'
+            link: '/github/'
           }]
         },
         {
@@ -124,7 +134,7 @@ const config = {
           },
           {
             text: 'Bot Invite',
-            link: 'https://discord.com/oauth2/authorize?client_id=617830404103077928&permissions=536931392&scope=bot'
+            link: '/bot/'
           }]
         }
       ],
