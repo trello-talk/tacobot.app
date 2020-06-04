@@ -54,11 +54,17 @@ module.exports = (options, ctx) => ({
     const { outDir } = ctx;
 
     getAliases(options, ctx).forEach(({ url, aliases }) => {
-      aliases.forEach(async alias => {
+      aliases.forEach(alias => {
+        let filePaths = [alias];
         if (/^\/.+\/$/.test(alias))
-          alias = alias.slice(1).replace(/\/$/, '') + '.html';
-        const aliasPagePath = path.resolve(outDir, alias)
-        await fs.outputFile(aliasPagePath, getTemplate(url))
+          filePaths = [
+            alias.slice(1).replace(/\/$/, '') + '.html',
+            alias.slice(1).replace(/\/$/, '') + '/index.html'
+          ];
+        filePaths.forEach(async file => {
+          const aliasPagePath = path.resolve(outDir, file)
+          await fs.outputFile(aliasPagePath, getTemplate(url))
+        });
       });
     });
   }
