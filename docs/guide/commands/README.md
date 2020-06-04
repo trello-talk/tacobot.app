@@ -11,11 +11,11 @@ aliases:
 | ----------- | ----------- |
 | **`help`** *`[command]`* | Shows the help message and gives information on commands. |
 | **`info`** | Get information about the bot. |
-| **`auth`** | Get the [authentication link](/auth/) to connect your Discord account to your Trello account. |
-| **`donate`** | Get the donation links ([Patreon](/patreon/), [Ko-fi](/kofi/)) for the developer. |
-| **`github`** | Sends the bot's [open source link](/source/). |
-| **`invite`** | Sends the bot [invite link](/bot/). |
-| **`serverinvite`** | Get the invite for the [support server](/support/). |
+| **`auth`** | Get the [authentication link](/auth) to connect your Discord account to your Trello account. |
+| **`donate`** | Get the donation links ([Patreon](/patreon), [Ko-fi](/kofi)) for the developer. |
+| **`github`** | Sends the bot's [open source link](/source). |
+| **`invite`** | Sends the bot [invite link](/bot). |
+| **`serverinvite`** | Get the invite for the [support server](/support). |
 | **`locale`** *`["userset"|"serverset"] [locale]`* | Lets you set the locale for you or the server. Run with no arguments for a list of locales. |
 | **`ping`** | Pong! (Get the response time of the bot) |
 | **`prefix`** *`["set"|"add"|"remove"] [prefix]`* | Lets you set the prefixes for you or the server. |
