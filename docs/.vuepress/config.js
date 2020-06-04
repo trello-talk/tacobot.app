@@ -85,8 +85,8 @@ const config = {
     search: false,
     nav: [
       { text: 'Guide', link: '/guide/' },
-      { text: 'Support', link: '/support/' },
-      { text: 'Invite Taco', link: '/bot/' }
+      { text: 'Support', link: '/support' },
+      { text: 'Invite Taco', link: '/bot' }
     ],
     sidebar,
     nextLinks: true,
@@ -106,12 +106,12 @@ const config = {
           rows: [{
             icon: 'patreon',
             title: 'Patreon',
-            link: '/patreon/'
+            link: '/patreon'
           },
           {
             icon: 'kofi',
             title: 'Ko-fi',
-            link: '/kofi/'
+            link: '/kofi'
           }]
         },
         {
@@ -119,11 +119,11 @@ const config = {
           rows: [{
             icon: 'twitter',
             title: 'Twitter',
-            link: '/twitter/'
+            link: '/twitter'
           },
           {
             icon: 'github',
-            link: '/github/'
+            link: '/github'
           }]
         },
         {
@@ -138,7 +138,7 @@ const config = {
           },
           {
             text: 'Bot Invite',
-            link: '/bot/'
+            link: '/bot'
           }]
         }
       ],
