@@ -4,7 +4,6 @@ module.exports = {
 			title: 'Getting Started',
 			children: [
 				'/guide/',
-				'/guide/auth/',
 				'/guide/webhooks/',
 			],
 		},

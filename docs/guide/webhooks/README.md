@@ -1,27 +1,19 @@
 # Webhooks
 
-Webhooks are a way to get messages/notifications through discord, about any changes made to a board you have authorised on the bot (See [Authentication Page](/guide/auth/)). 
+Webhooks are a way to get messages/notifications through discord, about any changes made to a board. 
 
-To get started, go to the settings for the channel you want to receive the messages in (click on the little gear icon next to the name), go to webhooks, then create a new webhook. 
-At this point, feel free to update the name & profile picture of the webhook, then copy the webhook URL. 
+FIrst of all, [make sure that you Trello account has been connected](/guide/#authentication). In order to create a webhook, you must either have a role with the name `Trello`, or have administrator privileges.
 
-You should also get your board ID for the board you would like to receive messages about: 
+To start creating a webhook, you can use the `T!addwebhook` command and select a board you want updates in. After you have selected a board, you can choose which webhook you want to use to send updates to or create one from scratch.
 
-`https://trello.com/b/<board-id>/<board-name>`
+<MarkdownImage
+  src="/images/addwebhook_example2.jpg"
+  original="/images/addwebhook_example2_original.png" />
 
-Extract your board ID as shown below and then run 
+After selecting or creating a Discord webhook, you should get a confirmation message via the new webhook. After this, any new updates to your boards will be shown.
 
-`T!addwebhook <board-id> <webhook-url>`
+<MarkdownImage
+  src="/images/addwebhook_example.jpg"
+  original="/images/addwebhook_example_original.png" />
 
-You should now receive a confirmation message to show your webhook is set up. 
-
-If you’d like to edit what updates you receive from your new webhook, you can use 
-
-`T!editwebhook <board-id> <webhookbits|all>`
-
-You can find a list of webhook bits with `T!webbits`, you can list as many or few as you want, and if you want to revert it to all events, put “all” in replace of them when running the command.
-
-If you want to remove the webhook, just type `T!remwebhook <board-id>`.
-
-
-For more information, head to the [Webhooks Command](/commands/webhooks/) section where these commands are explained in greater detail.
+*For more information, head to the [Webhook Commands](/guide/commands/webhooks/) section where these commands are explained in greater detail.*

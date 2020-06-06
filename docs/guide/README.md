@@ -1,17 +1,33 @@
-# Getting Started
+# Introduction
 
-To start with Trello bot, you must first go through the authentication process, which will allow TrelloBot to access your board.
+::: tip QUICKLINK
+You can invite Taco using the [invite link](/bot).  
+You can link your Trello account to your Discord account by going [here](/auth).  
+If you have any questions or suggestions, make sure to join the [support server](/support).
+:::
 
-If you are unsure how to carry out this step, check out the [Authentication Page](/guide/auth/).
+Taco is a Discord bot that connects your Trello account to your Discord account. From there, you can edit boards and cards directly from Discord and make actions on your board appear in a Discord channel live using webhooks.
 
-## What do you want to do?
+## Getting Started
 
-* I want to get notifications/messages when I change stuff on my board. Use a!webhooks for more info
-* I want to edit cards and other items through TrelloBot: Use T!help, you will see a list of commands under the “editing” sub-heading.
+Before you can use Taco, you will need to [invite him](/bot) to your Discord server. Make sure you use commands in a channel that Taco can both **read** and **send** messages from.
 
-## FAQ
-* How do I give permission to other users to edit the boards? Create a role named “Trello” and give it to them.
-* The bot isn’t responding to any of my commands… what’s wrong? Check you’ve added it to your server properly, make sure you are in a channel it has permissions to view.
-* The bot is offline, why? Most likely it encountered an error, Yamboy1 or Coolguy3289 will start it back up as soon as they can. Ping them to let em know!
+In order to have the best user experience, Taco is best with the following permissions:
+- `Manage Webhooks`
+- `Embed Links`
+- `Manage Messages`
+- `Add Reactions`
 
-If you have tried all these methods and are still strugging, @tag a member in the Voluntary Support role.
+You can see the available commands you can use by typing `T!help` or going to the [commands list](/commands) on the website.
+
+## Authentication
+::: warning
+Before authenticating, make sure that you use the right account to link to your Trello account. You must login to the [Discord website](https://discord.com) *(in `discord.com`, **not in PTB/Canary**)* and use the same account you intend to use Taco with.
+:::
+In order to interact with your Trello boards, you will need to authenticate with your Trello account. You can do so by going [here](/auth). The process takes less than a minute only needs two clicks. To verify that you have the right account and that you are authorized, you can use the `T!me` command.
+
+::: tip
+If you want to unlink your account, you can use the `T!clearauth` command in any channel.
+:::
+
+After this step, you can select a board with `T!switch` and you should be free to do any actions within the bot.
