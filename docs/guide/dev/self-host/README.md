@@ -2,10 +2,11 @@
 
 ## Prerequisites
 - [Node.JS](https://nodejs.org/) v12 or higher (use [nvm](https://github.com/nvm-sh/nvm/blob/master/README.md))
+- [Git](https://git-scm.com/downloads) ([Optional](#git))
 - [Yarn](https://yarnpkg.com/) ([install](https://yarnpkg.com/getting-started/install))
 - [Redis](https://redis.io/) ([quickstart](https://redis.io/topics/quickstart))
 - [PostgresSQL](https://www.postgresql.org/) ([download & install](https://www.postgresql.org/download/))
-- [Git](https://git-scm.com/downloads) ([Optional](#git))
+
 ## Installation
 
 ### Node.JS
@@ -19,6 +20,20 @@ If you are on Windows you can [download and install Node.JS](https://nodejs.org/
 ::: warning
 Make sure you download the LTS version! Using the latest version may have unintended side effects!
 :::
+
+### (Optional) Git
+
+If using ubuntu or debian flavor of linux, you can obtain git by running the following command:
+```
+sudo apt-get install git
+```
+
+If using CentOS or similar OS, you can install it via the following command:
+```
+sudo yum install git
+```
+
+If you'd like to install git from source on a different operating system, you can obtain git through their official [downloads](https://git-scm.com/downloads) page.
 
 ### Yarn
 After Node has been installed, you should have also gotten [NPM](https://www.npmjs.com/) with the installation. You can simply install yarn with one command.
@@ -58,20 +73,6 @@ sudo -u postgres psql
 \password tacobot
 ```
 :::
-
-### Git (Optional)
-
-If using ubuntu or debian flavor of linux, you can obtain git by running the following command:
-```
-sudo apt-get install git
-```
-
-If using CentOS or similar OS, you can install it via the following command:
-```
-sudo yum install git
-```
-
-If you'd like to install git from source on a different operating system, you can obtain git through their official [downloads](https://git-scm.com/downloads) page.
 
 ## Getting the bot's code
 

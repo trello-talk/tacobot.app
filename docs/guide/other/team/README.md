@@ -61,7 +61,7 @@ aliases:
   name="Clab"
   subtitle="Moderator and Support Staff"/>
 <Person
-  avatar="https://cdn.discordapp.com/avatars/290384363076714496/c498c6ca571ecede3bd9f0abbbbcfa7c.png?size=128"
+  avatar="https://cdn.discordapp.com/avatars/290384363076714496/884b2c473e61df79cb02ba0be04e8216.png"
   imageClass="rounded"
   name="Techguy9078"
   subtitle="Moderator and Support Staff"/>

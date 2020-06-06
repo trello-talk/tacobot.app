@@ -36,6 +36,9 @@ In order to interact with your Trello boards, you will need to authenticate with
 If you want to unlink your account, you can use the `T!clearauth` command in any channel.
 :::
 
+
 After this step, you can select a board with `T!switch` and you should be free to do any actions within the bot.
 
+::: tip USECASE
 The most common use for this bot is setting up webhooks to send Trello updates to a channel in Discord. To read how to quickly set this up, click the Webhooks link below, or click the Webhooks link under Getting Started on the sidebar.
+:::
