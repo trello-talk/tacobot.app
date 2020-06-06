@@ -101,4 +101,4 @@ The "repair webhook" option will fix the following:
 - The internal webhook is not activated
 
 ## Removing a webhook
-You can remove a webhook with the `T!remwebhook` command followed by the ID of the webhook. (i.e. `T!webhook 24`)
+You can remove a webhook with the `T!remwebhook` command followed by the ID of the webhook. (i.e. `T!remwebhook 24`)

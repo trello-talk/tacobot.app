@@ -5,7 +5,7 @@
 - [Yarn](https://yarnpkg.com/) ([install](https://yarnpkg.com/getting-started/install))
 - [Redis](https://redis.io/) ([quickstart](https://redis.io/topics/quickstart))
 - [PostgresSQL](https://www.postgresql.org/) ([download & install](https://www.postgresql.org/download/))
-
+- [Git](https://git-scm.com/downloads) ([Optional](#git))
 ## Installation
 
 ### Node.JS
@@ -58,6 +58,42 @@ sudo -u postgres psql
 \password tacobot
 ```
 :::
+
+### Git (Optional)
+
+If using ubuntu or debian flavor of linux, you can obtain git by running the following command:
+```
+sudo apt-get install git
+```
+
+If using CentOS or similar OS, you can install it via the following command:
+```
+sudo yum install git
+```
+
+If you'd like to install git from source on a different operating system, you can obtain git through their official [downloads](https://git-scm.com/downloads) page.
+
+## Getting the bot's code
+
+There are two ways to obtain the code for Taco. 
+
+### Download from GitHub directly
+
+You can download the code directly from the GitHub website by visiting the [Repo](https://github.com/trello-talk/TrelloBot).
+Once there click the green "Clone or download" button and click the Download ZIP option. After that, extract the code into the folder you wish to run it from.
+
+### Download via Git
+
+This option is helpful if you wish to keep your code up to date with the upstream repo (Our primary repo). This assumes you have git installed. If you haven't done this, follow the instructions above.
+
+To download/clone the repo either open Git Bash (on windows) or from the CLI of your server run the following command:
+```
+git clone https://github.com/trello-talk/TrelloBot
+cd TrelloBot
+```
+
+This will download the code to a folder called TrelloBot and navigate to that TrelloBot folder. 
+
 
 ## Starting the bot
 Before you start the bot, make sure to clone every file from the `.Config` folder into a new `Config` folder. From there, there should be documentation on every value in every configuration file. Make sure all the required values are filled out before running the bot.
