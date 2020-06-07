@@ -87,7 +87,6 @@ const config = {
       { text: 'Guide', link: '/guide/' },
       { text: 'Support', link: '/support/' },
       { text: 'Invite Taco', link: '/bot/' },
-      { text: 'Changelog', link: 'https://github.com/trello-talk/TrelloBot/blob/rewrite/CHANGELOG.md'}
     ],
     sidebar,
     nextLinks: true,
