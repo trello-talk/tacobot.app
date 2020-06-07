@@ -44,7 +44,7 @@ const config = {
     ],
     [
       'zooming',
-      { 
+      {
         selector: 'img:not(.logo):not([alt="hero"]):not([no-zoom])',
         options: {
           bgColor: 'black',
@@ -86,7 +86,8 @@ const config = {
     nav: [
       { text: 'Guide', link: '/guide/' },
       { text: 'Support', link: '/support/' },
-      { text: 'Invite Taco', link: '/bot/' }
+      { text: 'Invite Taco', link: '/bot/' },
+      { text: 'Changelog', link: 'https://github.com/trello-talk/TrelloBot/blob/rewrite/CHANGELOG.md'}
     ],
     sidebar,
     nextLinks: true,
