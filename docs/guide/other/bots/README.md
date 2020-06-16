@@ -13,15 +13,15 @@ aliases:
 
 - [Invite](/bot)
 
-</Person>
+</P
 
 <Person
-  avatar="/logo_happy.svg"
+  avatar="/tali.svg"
   imageClass="large"
-  name="Taco Two"
+  name="Tali"
   subtitle="The secondary instance of Taco Bot. (formerly Trello#5300)">
 
-- [Invite](/twobot)
+- [Invite](/talibot)
 
 </Person>
 

@@ -61,7 +61,7 @@ const config = {
         { url: 'https://discord.com/oauth2/authorize?client_id=620126394390675466&permissions=536931392&scope=bot',
           aliases: ['/invite/', '/bot/'] },
         { url: 'https://discord.com/oauth2/authorize?client_id=202929883863580673&permissions=536931392&scope=bot',
-          aliases: ['/invitetwo/', '/twobot/'] },
+          aliases: ['/invitetwo/', '/twobot/', '/invitetali/', '/talibot/'] },
         { url: 'https://discord.com/oauth2/authorize?client_id=617830404103077928&permissions=536931392&scope=bot',
           aliases: ['/invitenightly/', '/nightlybot/'] },
         { url: 'https://discord.gg/fJrZZ7V',
