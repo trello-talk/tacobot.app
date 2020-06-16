@@ -13,7 +13,7 @@ aliases:
 
 - [Invite](/bot)
 
-</P
+</Person>
 
 <Person
   avatar="/tali.svg"
