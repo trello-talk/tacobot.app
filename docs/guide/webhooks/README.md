@@ -1,3 +1,12 @@
+---
+sitemap:
+  changefreq: daily
+  priority: 0.6
+  img:
+    - url: https://tacobot.app/images/addwebhook_example2_original.png
+    - url: https://tacobot.app/images/addwebhook_example_original.png
+---
+
 # Webhooks
 
 Webhooks are a way to get messages/notifications through discord, about any changes made to a board. 

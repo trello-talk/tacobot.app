@@ -56,6 +56,12 @@ const config = {
     '@vuepress/pwa',
     '@vuepress/last-updated',
     [
+      'sitemap',
+      {
+        hostname: 'https://tacobot.app'
+      }
+    ],
+    [
       require('./redirect.js'),
       [
         { url: 'https://discord.com/oauth2/authorize?client_id=620126394390675466&permissions=536931392&scope=bot',

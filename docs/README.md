@@ -39,4 +39,27 @@ slides:
   ogImage: /images/comment_example_original.png
   caption: Comment on anything you need input on.
 footer: true
+sitemap:
+  changefreq: hourly
+  priority: 0.8
+  img:
+    - url: https://tacobot.app/images/me_example_original.png
+      caption: View your Trello information from Discord.
+    - url: https://tacobot.app/images/card_example_original.png
+      caption: Get data-rich responses from commands.
+    - url: https://tacobot.app/images/locale_example.jpg
+      caption: Set the language of the bot to your liking.
+    - url: https://tacobot.app/images/prefix_example_original.png
+      caption: Use any prefix you set it to.
+    - url: https://tacobot.app/images/comment_example_original.png
+      caption: Comment on anything you need input on.
+    - url: https://tacobot.app/images/addwebhook_example_original.png
+      title: Get Notified
+      caption: Easily setup webhooks to notify you on Discord when changes are made to your trello board.
+    - url: https://tacobot.app/images/editcard_example_original.png
+      title: Easy Management
+      caption: Manage your Trello board easily from the comfort of your Discord server.
+    - url: https://tacobot.app/images/editwebhook_example_original.png
+      title: Interactive Setup
+      caption: Easy to follow and easy to use prompts setup to manage Taco in your Discord server.
 ---
