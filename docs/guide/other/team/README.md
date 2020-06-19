@@ -7,7 +7,7 @@ aliases:
 
 ## Admins
 <Person
-  avatar="https://cdn.discordapp.com/avatars/135923847147945985/a_070ba35184aeb8e92b12065333210d5d.png?size=128"
+  avatar="/images/user/coolguy3289.png"
   imageClass="rounded"
   name="Coolguy3289"
   subtitle="SysAdmin">
@@ -22,19 +22,19 @@ aliases:
   </a>
 </Person>
 <Person
-  avatar="https://avatars1.githubusercontent.com/u/16436920?s=80&v=4"
+  avatar="/images/user/yooks.png"
   imageClass="rounded"
   name="Yooks"
   subtitle="Policy Manager"/>
 
 ## Developers
 <Person
-  avatar="https://avatars2.githubusercontent.com/u/37413895?s=80&v=4"
+  avatar="/images/user/yamboy.png"
   imageClass="rounded"
   name="Yamboy"
   subtitle="Backend Developer"/>
 <Person
-  avatar="https://snazzah.com/i/snazzah4r.png"
+  avatar="/images/user/snazzah.png"
   imageClass="rounded"
   name="Snazzah"
   subtitle="Frontend Developer">
@@ -51,17 +51,17 @@ aliases:
 
 ## Moderation Staff
 <Person 
-  avatar="https://cdn.discordapp.com/avatars/129693097431924736/a_e5f8c34d381612f3c7db389ffb283067.png?size=128"
+  avatar="/images/user/mystic.png"
   imageClass="rounded"
   name="Mystic"
   subtitle="Moderator and Support Staff"/>
 <Person
-  avatar="https://cdn.discordapp.com/avatars/162381280330121216/e48ef347c9026e48fff482a88ca7ba1d.png?size=128"
+  avatar="/images/user/clab.png"
   imageClass="rounded"
   name="Clab"
   subtitle="Moderator and Support Staff"/>
 <Person
-  avatar="https://cdn.discordapp.com/avatars/290384363076714496/884b2c473e61df79cb02ba0be04e8216.png"
+  avatar="/images/user/techguy9078.png"
   imageClass="rounded"
   name="Techguy9078"
   subtitle="Moderator and Support Staff"/>
