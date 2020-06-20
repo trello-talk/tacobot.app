@@ -18,7 +18,7 @@
       </div>
       <div class="hero">
         <div class="mobile-wrapper">
-          <img no-zoom src="/logo_happy.svg" />
+          <img no-zoom :src="this.$parent.darkTheme ? '/logo_nightly_happy.svg' : '/logo_happy.svg'" />
           <div class="hero-text">
             <h1>{{ data.heroText || $title || 'Hello' }}</h1>
             <p class="description">{{ data.tagline || $description || 'Welcome to your VuePress site' }}</p>
@@ -181,6 +181,40 @@ export default {
         line-height 1.2
       .picture-outer
         margin 10px 0
+  hr
+    border-color $borderColor
+  html.dark-theme &
+    .landing
+      .slideshow
+        .VueCarousel-dot-container
+          .VueCarousel-dot
+            &[aria-selected="false"]
+              background-color lighten($dark-imageBackground, 25%) !important
+            &[aria-selected="true"]
+              background-color $dark-textColor !important
+        .caption
+          color lighten($dark-imageBackground, 25%)
+      .hero
+        .mobile-wrapper
+          .description
+            color $dark-altTextColor
+      .action-button
+        color $dark-accentColor
+        &.primary
+          color #fff
+          background-color $dark-accentColor
+          border-bottom 1px solid darken($dark-accentColor, 10%)
+          &:hover
+            background-color lighten($dark-accentColor, 10%)
+    .picture-outer
+      background-color $dark-imageBackground
+      border 3px solid $dark-imageBackground
+    .features
+      .feature
+        p
+          color $dark-altTextColor
+    hr
+      border-color $dark-borderColor
 @media (max-width: $MQNarrow)
   .home
     .landing

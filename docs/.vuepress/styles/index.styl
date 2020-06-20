@@ -1,0 +1,73 @@
+html
+  background-color $backgroundColor
+  #app
+    background-color $backgroundColor
+    color $textColor
+  .navbar, .sidebar, .sidebar .nav-links
+    background-color $backgroundColor
+    border-color $borderColor
+  h2
+    border-color $borderColor
+  a.sidebar-link:not(.active):not(:hover)
+    color lighten($textColor, 20%)
+  table
+    tr
+      border-top 1px solid $borderColor
+      &:nth-child(2n)
+        background-color lighten($borderColor, 50%)
+    th, td
+      border 1px solid $borderColor
+      padding .6em 1em
+  *::-webkit-scrollbar
+    width 15px
+  *::-webkit-scrollbar-track
+    background-color darken($backgroundColor, 5%)
+    border-radius 10px
+    border 3px solid $backgroundColor
+  *::-webkit-scrollbar-thumb
+    background-color darken($backgroundColor, 20%)
+    border-radius 10px
+    border 3px solid $backgroundColor
+  &.dark-theme
+    background-color $dark-backgroundColor
+    #app
+      background-color $dark-backgroundColor
+      color $dark-textColor
+    code
+      color lighten($dark-accentColor, 20%)
+      background-color lighten($dark-backgroundColor, 10%)
+    table
+      tr
+        border-top 1px solid $dark-borderColor
+        &:nth-child(2n)
+          background-color darken($dark-borderColor, 50%)
+      th, td
+        border 1px solid $dark-borderColor
+        padding .6em 1em
+    .navbar, .sidebar, .sidebar .nav-links
+      background-color $dark-backgroundColor
+      border-color $dark-borderColor
+    h2, .page-nav .inner
+      border-color $dark-borderColor
+    a.sidebar-link:not(.active):not(:hover)
+      color darken($dark-textColor, 20%)
+    .nav-links a:hover, .nav-links a.router-link-active
+      color $dark-accentColor
+    .page-edit .edit-link a, .page-edit .last-updated .prefix
+      color $dark-altTextColor
+    .custom-block
+      color $dark-textColor
+      &.tip, &.details
+        background-color lighten($dark-backgroundColor, 5%)
+      &.warning
+        background-color darken(#e7c000, 80%)
+        a
+          color $dark-accentColor
+    *::-webkit-scrollbar-track
+      background-color darken($dark-backgroundColor, 20%)
+      border-radius 10px
+      border 3px solid $dark-backgroundColor
+    *::-webkit-scrollbar-thumb
+      background-color darken($dark-backgroundColor, 50%)
+      border-radius 10px
+      border 3px solid $dark-backgroundColor

@@ -43,6 +43,8 @@
     justify-content center
     .buttons a
       line-height 2
+  html.dark-theme &
+    border 1px solid $dark-borderColor
 </style>
 
 <script>

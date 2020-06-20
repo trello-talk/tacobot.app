@@ -9,7 +9,7 @@
       <img
         v-if="$site.themeConfig.logo"
         class="logo"
-        :src="$withBase($site.themeConfig.logo)"
+        :src="$withBase(($parent.darkTheme ? $site.themeConfig.logoDark : null) || $site.themeConfig.logo)"
         :alt="$siteTitle"
       >
       <span
@@ -103,7 +103,6 @@ function css (el, property) {
   .links
     padding-left 1.5rem
     box-sizing border-box
-    background-color white
     white-space nowrap
     font-size 0.9rem
     position absolute
@@ -113,6 +112,9 @@ function css (el, property) {
     .search-box
       flex: 0 0 auto
       vertical-align top
+  html.dark-theme &
+    .site-name
+      color $dark-textColor
 @media (max-width: $MQMobile)
   .navbar
     padding-left 4rem

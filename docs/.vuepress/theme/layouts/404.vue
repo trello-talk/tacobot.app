@@ -78,7 +78,9 @@
 
 <script>
 import NavLink from '@parent-theme/components/NavLink.vue'
+import darkTheme from '@theme/mixins/darkTheme.js'
 export default {
   components: { NavLink },
+	mixins: [darkTheme]
 }
 </script>

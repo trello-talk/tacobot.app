@@ -13,6 +13,9 @@
             <component :is="'icon-' + cell.icon" />
             {{ cell.text }}
           </a>
+          <span v-else-if="cell.darkbtn" class="dark-btn" @click="$parent.toggleDarkTheme">
+            {{ $parent.darkTheme ? 'Light theme?' : 'Dark theme?' }}
+          </span>
           <NavLink v-else-if="cell.text && cell.link" :item="cell" />
         </div>
       </div>
@@ -74,7 +77,7 @@ export default {
               width 24px
               height 24px
           &.nav-link
-            & + a.nav-link
+            & + a.nav-link, & + .dark-btn
               margin-top 5px
   .fine-print
     color $textColor
@@ -82,6 +85,21 @@ export default {
     margin 0
     p 
       margin .25rem 0
+  .dark-btn
+    border-radius 20px
+    background-color $dark-imageBackground
+    color $dark-textColor
+    font-weight bold
+    padding: 2px 7px
+    cursor pointer
+  html.dark-theme &
+    background-color lighten($dark-imageBackground, 10%)
+    .dark-btn
+      border-radius 20px
+      background-color $imageBackground
+      color $textColor
+    .fine-print
+      color $dark-textColor
 @media (max-width: $MQMobile)
   .footer
     background-image none

@@ -104,6 +104,7 @@ const config = {
     editLinks: true,
     editLinkText: 'Improve this page on GitHub!',
     logo: '/logo_happy.svg',
+    logoDark: '/logo_nightly_happy.svg',
     smoothScroll: true,
     footer: {
       columns: [
@@ -146,6 +147,9 @@ const config = {
           {
             text: 'Bot Invite',
             link: '/bot/'
+          },
+          {
+            darkbtn: true
           }]
         }
       ],

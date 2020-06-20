@@ -51,6 +51,7 @@ import Navbar from '@theme/components/Navbar.vue'
 import Page from '@parent-theme/components/Page.vue'
 import Sidebar from '@parent-theme/components/Sidebar.vue'
 import Footer from '@theme/components/Footer.vue'
+import darkTheme from '@theme/mixins/darkTheme.js'
 import { resolveSidebarItems } from '@parent-theme/util'
 export default {
   name: 'Layout',
@@ -61,6 +62,7 @@ export default {
     Navbar,
     Footer
   },
+	mixins: [darkTheme],
   data () {
     return {
       isSidebarOpen: false
