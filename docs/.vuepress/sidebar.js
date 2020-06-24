@@ -30,7 +30,7 @@ module.exports = {
 				'/guide/other/team/',
 				'/guide/other/bots/',
 				'/guide/other/botlists/',
-				['https://github.com/trello-talk/TrelloBot/blob/rewrite/CHANGELOG.md','Changelog'],
+				['https://github.com/trello-talk/TrelloBot/blob/master/CHANGELOG.md', 'Changelog'],
 			],
 		},
 	]

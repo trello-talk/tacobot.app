@@ -1,3 +1,6 @@
+table
+  overflow visible
+
 html
   background-color $backgroundColor
   #app
@@ -40,7 +43,7 @@ html
       tr
         border-top 1px solid $dark-borderColor
         &:nth-child(2n)
-          background-color darken($dark-borderColor, 50%)
+          background-color lighten($dark-backgroundColor, 2%)
       th, td
         border 1px solid $dark-borderColor
         padding .6em 1em

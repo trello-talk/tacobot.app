@@ -90,7 +90,7 @@ export default {
     background-color $dark-imageBackground
     color $dark-textColor
     font-weight bold
-    padding: 2px 7px
+    padding 2px 7px
     cursor pointer
   html.dark-theme &
     background-color lighten($dark-imageBackground, 10%)
