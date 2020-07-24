@@ -149,6 +149,10 @@ const config = {
             link: '/bot/'
           },
           {
+	    text: 'Contact Us',
+	    link: '/contact/'
+	  },
+          {
             darkbtn: true
           }]
         }
