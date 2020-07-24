@@ -84,6 +84,8 @@ const config = {
           aliases: ['/github/'] },
         { url: 'https://twitter.com/TacoBotDiscord/',
           aliases: ['/twitter/'] },
+        { url: 'https://tacobot.app/guide/other/contact/',
+          aliases: ['/contact/'] }
       ]
     ]
   ],
