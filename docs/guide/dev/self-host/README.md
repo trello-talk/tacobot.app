@@ -21,7 +21,7 @@ If you are on Windows you can [download and install Node.JS](https://nodejs.org/
 Make sure you download the LTS version! Using the latest version may have unintended side effects!
 :::
 
-### (Optional) Git
+### Git (optional)
 
 If using ubuntu or debian flavor of linux, you can obtain git by running the following command:
 ```
@@ -80,7 +80,7 @@ There are two ways to obtain the code for Taco.
 
 ### Download from GitHub directly
 
-You can download the code directly from the GitHub website by visiting the [Repo](https://github.com/trello-talk/TrelloBot).
+You can download the code directly from the GitHub website by visiting the [Repo](https://github.com/trello-talk/Taco).
 Once there click the green "Clone or download" button and click the Download ZIP option. After that, extract the code into the folder you wish to run it from.
 
 ### Download via Git
@@ -89,11 +89,11 @@ This option is helpful if you wish to keep your code up to date with the upstrea
 
 To download/clone the repo either open Git Bash (on windows) or from the CLI of your server run the following command:
 ```
-git clone https://github.com/trello-talk/TrelloBot
-cd TrelloBot
+git clone https://github.com/trello-talk/Taco
+cd Taco
 ```
 
-This will download the code to a folder called TrelloBot and navigate to that TrelloBot folder. 
+This will download the code to a folder called Taco and navigate to that Taco folder. 
 
 
 ## Starting the bot

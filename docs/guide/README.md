@@ -18,7 +18,7 @@ Taco is a Discord bot that connects your Trello account to your Discord account.
 
 Before you can use Taco, you will need to [invite him](/bot) to your Discord server. Make sure you use commands in a channel that Taco can both **read** and **send** messages from.
 
-In order to have the best user experience, Taco is best with the following permissions:
+In order to have the best user experience, Taco should have the following permissions:
 - `Manage Webhooks`
 - `Embed Links`
 - `Manage Messages`
@@ -26,7 +26,7 @@ In order to have the best user experience, Taco is best with the following permi
 
 You can see the available commands you can use by typing `T!help` or going to the [commands list](/commands) on the website.
 
-## (Optional) Trello role
+## The Trello Role (optional)
 
 Certain commands such as the Webhook related commands are role limited. To restrict who can use these commands, the bot looks for a Trello role on a server or for a user with Administrator permissions. If a user doesn't have that role, they will be unable to run those commands. 
 The role needs no permissions, so long as it has the name "Trello".
