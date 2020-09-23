@@ -18,8 +18,9 @@ aliases:
 | **`serverinvite`** | Get the invite for the [support server](/support). |
 | **`locale`** *`["userset"|"serverset"] [locale]`* | Lets you set the locale for you or the server. Run with no arguments for a list of locales. |
 | **`ping`** | Pong! (Get the response time of the bot) |
-| **`prefix`** *`["set"|"add"|"remove"] [prefix]`* | Lets you set the prefixes for you or the server. |
 | **`shardinfo`** | Gives the stats for every shard. |
+| **`vote`** | Shows links where you can vote Taco on [botlists](/guide/other/botlists). |
+| **`prefix`** *`["set"|"add"|"remove"] [prefix]`* | Lets you set the prefixes for you or the server. |
 
 ## User Management
 | Command     | Description |
@@ -49,18 +50,24 @@ aliases:
 | **`boards`** *`[page]`* | Lists all of the boards you can manage. |
 | **`card`** *`[cardName|cardID]`* | Gets information about a specific card. |
 | **`cardarchive`** *`[page]`* | Lists all the archived cards in the current board. |
+| **`attachment`** *`[cardName|cardID] [attachmentName|attachmentID]`* | Shows an attachment that is on a card. |
 | **`list`** *`[listName|listID] [page]`* | Lists all cards in that list. |
 | **`listarchive`** *`[page]`* | Lists all the archived lists in the current board. |
 | **`lists`** *`[page]`* | Lists all of the open lists on the current board. You can see the list archive with `T!listarchive`. |
+| **`label`** *`[labelName|labelID]`* | Shows information on a label on the current board. |
+| **`labels`** *`[page]`* | Lists all of the labels on the current board. |
 
 
 ## Editing
 | Command     | Description |
 | ----------- | ----------- |
 | **`addcard`** *`[listName|listID] [name]`* | Creates a card. |
+| **`addlabel`** *`[name]`* | Creates a label on the current board. |
 | **`addlist`** *`[name]`* | Creates a list on the current board. |
 | **`comment`** *`[cardName|cardID] [comment]`* | Comment on a card in the current board. |
+| **`deletelabel`** *`[labelName|labelID]`* | Deletes a label. |
 | **`deletecard`** *`[cardName|cardID]`* | Deletes a card. |
 | **`editboard`** *`[subcommand] …`* | Edit the current board's properties. |
 | **`editcard`** *`[cardName|cardID] [subcommand] …`* | Edit a card's properties. |
+| **`editlabel`** *`[labelName|labelID] [subcommand] …`* | Edit a label's properties.  |
 | **`editlist`** *`[listName|listID] [subcommand] …`* | Edit a list's properties. |
