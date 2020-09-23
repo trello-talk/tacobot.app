@@ -20,5 +20,17 @@ For support on Taco, visit the [support server](/support).
 :::
 
 ::: details How do I change which channel the webhook goes to?
-You can do this by going into `Server Settings > Webhooks` and changing the channel from there.
+You can do this by going into `Server Settings > Integrations > Webhooks` finding the webhook and changing the channel from there.
+:::
+
+::: details How do I make updates to my board send to a channel?
+Run `T!addwebhook` and follow the instructions.
+:::
+
+::: details How do I change what sends to my webhook?
+Use `T!editwebhook [webhookID] filters` to edit webhook filters.
+:::
+
+::: details What is Tali for?
+Tali is the renamed instance of the old Trello#5300 application. It has been repurposed into a secondary instance of Taco.
 :::
