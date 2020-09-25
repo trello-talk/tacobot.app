@@ -151,9 +151,13 @@ const config = {
             link: '/bot/'
           },
           {
-	    text: 'Contact Us',
-	    link: '/contact/'
-	  },
+            text: 'Privacy Policy',
+            link: '/privacy/'
+          },
+          {
+            text: 'Contact Us',
+            link: '/contact/'
+          },
           {
             darkbtn: true
           }]
