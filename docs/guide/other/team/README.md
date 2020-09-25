@@ -67,13 +67,11 @@ aliases:
   subtitle="Moderator and Support Staff"/>
 
 ## Translation Team
-<Person name="kcSeb"/>
-<Person name="Saederup92"/>
-<Person name="Setrin"/>
-<Person name="dragon-kurve"/>
-<Person name="infinite-persistence"/>
-<Person name="Jerbod"/>
-<Person name="Lobo Metalurgico"/>
-<Person name="Mackan"/>
-<Person name="MercyMe"/>
-<Person name="Seadox"/>
+<Person name="Saederup92" subtitle="Danish"/>
+<Person name="LordSami" subtitle="German"/>
+<Person name="dragon-kurve" subtitle="Korean"/>
+<Person name="infinite-persistence" subtitle="Malay"/>
+<Person name="Jerbod" subtitle="French"/>
+<Person name="Lobo Metalurgico" subtitle="Portuguese (Brazil)"/>
+<Person name="Hugovidafe" subtitle="Spanish"/>
+<Person name="Square" subtitle="Dutch"/>
