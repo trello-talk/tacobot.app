@@ -2,6 +2,7 @@
   <RouterLink
     v-if="isInternal"
     class="nav-link"
+    :class="item.class || ''"
     :to="link"
     :exact="exact"
     @focusout.native="focusoutAction"
@@ -12,6 +13,7 @@
     v-else
     :href="link"
     class="nav-link external"
+    :class="item.class || ''"
     :target="target"
     :rel="rel"
     @focusout="focusoutAction"

@@ -88,6 +88,16 @@ function css (el, property) {
 .navbar
   padding $navbar-vertical-padding $navbar-horizontal-padding
   line-height $navbarHeight - 1.4rem
+  .nav-link.primary
+    background-color $accentColor
+    padding 5px 10px
+    border-radius 5px
+    color #fff
+    & svg
+      display none
+    &:hover
+      background-color lighten($accentColor, 10%)
+      color #fff
   a, span, img
     display inline-block
   .logo
