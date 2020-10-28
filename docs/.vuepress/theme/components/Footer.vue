@@ -104,15 +104,12 @@ export default {
   .footer
     background-image none
     .columns
-      flex-direction column
-      align-items center
+      flex-wrap wrap
       .column-opener
         max-width none
         margin-bottom 2rem
       .column
-        align-self center
-        & + .column
-          margin-top 1rem
+        align-self flex-start
         .links
           justify-content center
     .fine-print
