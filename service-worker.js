@@ -27,7 +27,7 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "09123434c19c152b466d1c5b1c485f86"
+    "revision": "f23480fbc8fcbe0448a105c31a705015"
   },
   {
     "url": "assets/css/0.styles.da590955.css",
@@ -190,68 +190,68 @@ self.__precacheManifest = [
     "revision": "c42fcfd6a8a6508eee0aeb31f5b008cf"
   },
   {
-    "url": "assets/js/app.7d19a2cf.js",
-    "revision": "53f01410b6652fc28b95a2f942d33da7"
+    "url": "assets/js/app.9ec3ea80.js",
+    "revision": "b58a7db11fe76c79029cf9f880702b66"
   },
   {
     "url": "guide/commands/edit/index.html",
-    "revision": "03b863cbf17f5902d39a9a17e4ef287a"
+    "revision": "e6cb7fe0925e77bb4eb8182a15b195dd"
   },
   {
     "url": "guide/commands/index.html",
-    "revision": "30dadc175f1b15f4198983b5f59e21e6"
+    "revision": "9022282332fb0255655d2afd60f457ba"
   },
   {
     "url": "guide/commands/viewing/index.html",
-    "revision": "258a0a513ab6281798e4a2dceda5cca8"
+    "revision": "4eb30dcf9bfa1a908cd9ccf283e14dc2"
   },
   {
     "url": "guide/commands/webhooks/index.html",
-    "revision": "17147fd5ada762426fceadc33a4be8d2"
+    "revision": "4c452288dee7117e59d96f88d5392dfd"
   },
   {
     "url": "guide/dev/index.html",
-    "revision": "c13adbe88b3e3d763ac6a2ede54835b8"
+    "revision": "e0c11573b659c69ccdf28c61de2c18b8"
   },
   {
     "url": "guide/dev/self-host/index.html",
-    "revision": "6f079976468a74ffb9f508e97bbd6d12"
+    "revision": "4783a75e05dd4cf13df278caaa55b39f"
   },
   {
     "url": "guide/index.html",
-    "revision": "d00ae5d7aa3db0f151b3a6d5ca5dbc6b"
+    "revision": "3404c9356a307c607a2741f67dfae363"
   },
   {
     "url": "guide/other/botlists/index.html",
-    "revision": "19fdb51f8c2c810867fe8148cbd2e553"
+    "revision": "5e5ba8b7548836acafae4e0d53ea7e36"
   },
   {
     "url": "guide/other/bots/index.html",
-    "revision": "8a665577ba407741a72a4015c6920cef"
+    "revision": "8c7312e82ca9424e38c84038f22ac30e"
   },
   {
     "url": "guide/other/contact/index.html",
-    "revision": "34a6e9aec2471ce10dca69d5767c8826"
+    "revision": "1e7890f330037d104f45acf50eb282fa"
   },
   {
     "url": "guide/other/faq/index.html",
-    "revision": "0be4c56460518d313bc00645854fe29f"
+    "revision": "3a2df4ba9ba268f18db11047e5d7a29e"
   },
   {
     "url": "guide/other/index.html",
-    "revision": "5726701be7c7354e95a4b4e974f05231"
+    "revision": "03e487246b899b1995008a551e27f18f"
   },
   {
     "url": "guide/other/privacy/index.html",
-    "revision": "c88f2bf6b9fd882c295f6d21b8bae936"
+    "revision": "309f999d666cbcb1a13a9f6429432602"
   },
   {
     "url": "guide/other/team/index.html",
-    "revision": "5f3d75c1f2145d327af31f0146bd78b8"
+    "revision": "21f7564b396751c73f5bbe08111b27e8"
   },
   {
     "url": "guide/webhooks/index.html",
-    "revision": "00712934290126efc1ea251f153ab451"
+    "revision": "cf48402299355f503dd4de7ff966540f"
   },
   {
     "url": "images/addwebhook_example_original.png",
@@ -271,7 +271,7 @@ self.__precacheManifest = [
   },
   {
     "url": "images/addwebhook_example3_original.png",
-    "revision": "77a503aa54ed7681b9fb6c15fbb2c779"
+    "revision": "43d4518de57ec7c2f0717c0517bc587f"
   },
   {
     "url": "images/addwebhook_example3.jpg",
@@ -343,7 +343,7 @@ self.__precacheManifest = [
   },
   {
     "url": "images/features/filters_original.png",
-    "revision": "469214fe44e7e575bdeb210b1b6dfcc3"
+    "revision": "9b23111cff564b06bf9554c8e15ca124"
   },
   {
     "url": "images/features/filters.jpg",
@@ -351,7 +351,7 @@ self.__precacheManifest = [
   },
   {
     "url": "images/features/interactive_original.png",
-    "revision": "7514e54ed1b89cad9767ef704514be9d"
+    "revision": "a7ab3379bdaa715a9a9f7a4d4c13bbc8"
   },
   {
     "url": "images/features/interactive.jpg",
@@ -359,7 +359,7 @@ self.__precacheManifest = [
   },
   {
     "url": "images/features/localize_repair_original.png",
-    "revision": "a500176a64a37a1e953cf2cdcb574eab"
+    "revision": "2b97960e4dea4df42eabfa426e64789e"
   },
   {
     "url": "images/features/localize_repair.jpg",
@@ -367,7 +367,7 @@ self.__precacheManifest = [
   },
   {
     "url": "images/features/mgmt_original.png",
-    "revision": "0636a771d512f2939bc78c27ea8a799d"
+    "revision": "1ec14ef011929582253dd895566656ba"
   },
   {
     "url": "images/features/mgmt.jpg",
@@ -375,7 +375,7 @@ self.__precacheManifest = [
   },
   {
     "url": "images/features/notified_original.png",
-    "revision": "f8f1925d99511d30b24831ef2ab3f13d"
+    "revision": "887d209c576db009e619ef14efac3e0c"
   },
   {
     "url": "images/features/notified.jpg",
@@ -383,7 +383,7 @@ self.__precacheManifest = [
   },
   {
     "url": "images/features/styles_original.png",
-    "revision": "9d046e816477a591d7da028cab1a0c99"
+    "revision": "6b7190cb5c010cb49ae0136123e889fb"
   },
   {
     "url": "images/features/styles.jpg",
@@ -475,7 +475,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "86b37ff5d1ccf234e9c4880554593537"
+    "revision": "fd930145652bf6f0be128ae6aeaa4b1f"
   },
   {
     "url": "logo_footer.png",
