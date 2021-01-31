@@ -134,7 +134,7 @@ export default {
   },
   data() {
     return {
-      isMobile: window.innerWidth < 719
+      isMobile: globalThis.window ? globalThis.window.innerWidth < 719 : false
     }
   },
   computed: {
