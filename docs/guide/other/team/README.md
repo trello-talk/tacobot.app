@@ -21,11 +21,6 @@ aliases:
     <icon-twitter/>
   </a>
 </Person>
-<Person
-  avatar="/images/user/yooks.png"
-  imageClass="rounded"
-  name="Yooks"
-  subtitle="Policy Manager"/>
 
 ## Developers
 <Person

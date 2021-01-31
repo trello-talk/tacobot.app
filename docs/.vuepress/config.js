@@ -8,6 +8,7 @@ const config = {
     // Manifest
     ['link', { rel: 'icon', href: '/logo_happy.png' }],
     ['link', { rel: 'manifest', href: '/manifest.json' }],
+    ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap' }],
     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1' }],
 
     // Icons
@@ -36,6 +37,20 @@ const config = {
     ['meta', { name: 'og:description', content: 'Manage Trello boards and get notified of board updates straight from Discord!' }],
     ['meta', { name: 'og:locale', content: 'en_US' }],
     ['meta', { name: 'og:image', content: '/logo_happy.png' }],
+    ['meta', {
+      name: 'og:keywords',
+      content: [
+        'Discord',
+        'd i s c o r d',
+        'discord bots',
+        'discord bot',
+        'bots discord',
+        'trello',
+        'trello bot',
+        'webhook',
+        'webhooks'
+      ].join(',')
+    }],
   ],
   plugins: [
     [
@@ -45,7 +60,7 @@ const config = {
     [
       'zooming',
       {
-        selector: 'img:not(.logo):not([alt="hero"]):not([no-zoom])',
+        selector: 'div:not(lightbox__thumbnail) > img:not(.logo):not([alt="hero"]):not([no-zoom]),.md-img',
         options: {
           bgColor: 'black',
           bgOpacity: 0.5,
@@ -150,11 +165,11 @@ const config = {
           },
           {
             text: 'Privacy Policy',
-            link: '/privacy/'
+            link: '/privacy'
           },
           {
             text: 'Contact Us',
-            link: '/contact/'
+            link: '/contact'
           },
           {
             darkbtn: true
@@ -165,7 +180,7 @@ const config = {
         'This project is licenced under the GNU General Public License v3.0.',
         'Trello Talk and the Taco Bot is not affiliated with Trello Inc. or Taco the Husky.',
         '',
-        'Copyright © 2020 Trello Talk Team'
+        'Copyright © 2021 Trello Talk Team'
       ]
     }
   }

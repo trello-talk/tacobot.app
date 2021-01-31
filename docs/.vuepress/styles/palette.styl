@@ -1,3 +1,16 @@
+// layout
+$navbarHeight = 3.6rem
+$sidebarWidth = 20rem
+$contentWidth = 740px
+$homePageWidth = 1440px
+$navbar-vertical-padding = 0.7rem
+$navbar-horizontal-padding = 2.5rem
+
+// responsive breakpoints
+$MQNarrow = 959px
+$MQMobile = 719px
+$MQMobileNarrow = 419px
+
 // colors
 $accentColor = #93a01e
 $textColor = #2f3640
@@ -24,15 +37,57 @@ $dark-imageBackground = #313131
 $dark-altTextColor = #8b927a
 $dark-backgroundColor = #222
 
-// layout
-$navbarHeight = 3.6rem
-$sidebarWidth = 20rem
-$contentWidth = 740px
-$homePageWidth = 1440px
-$navbar-vertical-padding = 0.7rem
-$navbar-horizontal-padding = 2.5rem
 
-// responsive breakpoints
-$MQNarrow = 959px
-$MQMobile = 719px
-$MQMobileNarrow = 419px
+// New colors
+$accent = #93a01e
+$tip = #42b983
+$warning = #e7c000
+$error = #c00
+$counterAccent = #fff
+$light-bg1 = #FFFFFF
+$light-bg2 = #F5F6FA
+$light-bg3 = #E4E6EC
+$light-nav = #EEEFF3
+$light-footer = #EEEEEE
+$light-text1 = #323232
+$light-text2 = #4F4F4F
+$light-text3 = #737373
+$dark-bg1 = #242424
+$dark-bg2 = #191919
+$dark-bg3 = #111111
+$dark-nav = #050505
+$dark-footer = #4D4D4D
+$dark-text1 = #EBEBEB
+$dark-text2 = #D3D3D3
+$dark-text3 = #9B9B9B
+
+:root {
+  --accent: $accent
+  --accentLight10: lighten($accent, 10%)
+  --accentDark10: darken($accent, 10%)
+  --counterAccent: $counterAccent
+
+  --tip: $tip
+  --warning: $warning
+  --error: $error
+
+  --primaryBG: $light-bg1
+  --secondaryBG: $light-bg2
+  --tertiaryBG: $light-bg3
+  --navbar: $light-nav
+  --footer: $light-footer
+  --text: $light-text1
+  --secondaryText: $light-text2
+  --tertiaryText: $light-text3
+}
+
+html.dark-theme {
+  --primaryBG: $dark-bg1
+  --secondaryBG: $dark-bg2
+  --tertiaryBG: $dark-bg3
+  --navbar: $dark-nav
+  --footer: $dark-footer
+  --text: $dark-text1
+  --secondaryText: $dark-text2
+  --tertiaryText: $dark-text3
+}

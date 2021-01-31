@@ -1,6 +1,6 @@
 <template>
-  <header class="navbar">
-    <SidebarButton @toggle-sidebar="$emit('toggle-sidebar')" />
+  <header class="navbar" role="navigation">
+    <SidebarButton @toggle-sidebar="$emit('toggle-sidebar')" role="button" />
 
     <RouterLink
       :to="$localePath"
@@ -9,7 +9,7 @@
       <img
         v-if="$site.themeConfig.logo"
         class="logo"
-        :src="$withBase(($parent.darkTheme ? $site.themeConfig.logoDark : null) || $site.themeConfig.logo)"
+        :src="$site.themeConfig.logo"
         :alt="$siteTitle"
       >
       <span
@@ -27,6 +27,7 @@
     >
       <AlgoliaSearchBox
         v-if="isAlgoliaSearch"
+        role="search"
         :options="algolia"
       />
       <SearchBox v-else-if="$site.themeConfig.search !== false && $page.frontmatter.search !== false" />
@@ -73,6 +74,7 @@ export default {
       }
     }
     handleLinksWrapWidth()
+    // deepscan-disable-next-line VUE_MISSING_CLEANUP_IN_LIFECYCLE
     window.addEventListener('resize', handleLinksWrapWidth, false)
   }
 }
@@ -88,16 +90,18 @@ function css (el, property) {
 .navbar
   padding $navbar-vertical-padding $navbar-horizontal-padding
   line-height $navbarHeight - 1.4rem
+  background-color var(--navbar)
+  border none
   .nav-link.primary
-    background-color $accentColor
+    background-color var(--accent)
     padding 5px 10px
     border-radius 5px
-    color #fff
+    color var(--counterAccent)
     & svg
       display none
     &:hover
-      background-color lighten($accentColor, 10%)
-      color #fff
+      background-color var(--accentLight10)
+      color var(--counterAccent)
   a, span, img
     display inline-block
   .logo
@@ -108,7 +112,7 @@ function css (el, property) {
   .site-name
     font-size 1.3rem
     font-weight 600
-    color $textColor
+    color var(--text)
     position relative
   .links
     padding-left 1.5rem
@@ -122,9 +126,6 @@ function css (el, property) {
     .search-box
       flex: 0 0 auto
       vertical-align top
-  html.dark-theme &
-    .site-name
-      color $dark-textColor
 @media (max-width: $MQMobile)
   .navbar
     padding-left 4rem

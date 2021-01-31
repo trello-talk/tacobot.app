@@ -2,6 +2,7 @@
   <RouterLink
     v-if="isInternal"
     class="nav-link"
+    role="button"
     :class="item.class || ''"
     :to="link"
     :exact="exact"
@@ -13,6 +14,7 @@
     v-else
     :href="link"
     class="nav-link external"
+    role="button"
     :class="item.class || ''"
     :target="target"
     :rel="rel"

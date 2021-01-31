@@ -45,7 +45,7 @@ export default {
 
 <style lang="stylus">
 .footer
-  background-color lighten($imageBackground, 50%)
+  background-color var(--footer)
   background-image url('/logo_footer.png')
   background-repeat no-repeat
   background-size contain
@@ -80,26 +80,18 @@ export default {
             & + a.nav-link, & + .dark-btn
               margin-top 5px
   .fine-print
-    color $textColor
+    color var(--text)
     font-size 10px
     margin 0
     p 
       margin .25rem 0
   .dark-btn
     border-radius 20px
-    background-color $dark-imageBackground
-    color $dark-textColor
+    background-color var(--text)
+    color var(--primaryBG)
     font-weight bold
     padding 2px 7px
     cursor pointer
-  html.dark-theme &
-    background-color lighten($dark-imageBackground, 10%)
-    .dark-btn
-      border-radius 20px
-      background-color $imageBackground
-      color $textColor
-    .fine-print
-      color $dark-textColor
 @media (max-width: $MQMobile)
   .footer
     background-image none

@@ -17,7 +17,7 @@
 <style lang="stylus">
 .person
   border-radius .5em
-  border 1px solid $borderColor
+  background-color var(--secondaryBG)
   padding .5em
   margin .5em
   display flex
@@ -31,7 +31,7 @@
   img
     height 5em
     & + .person-content
-      margin-left: 1em
+      margin-left 1em
     &.large
       height 10em
     &.rounded
@@ -41,10 +41,10 @@
     flex-direction column
     flex auto
     justify-content center
+    .subtitle
+      color var(--tertiaryText)
     .buttons a
       line-height 2
-  html.dark-theme &
-    border 1px solid $dark-borderColor
 </style>
 
 <script>

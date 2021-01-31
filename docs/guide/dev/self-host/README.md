@@ -24,12 +24,12 @@ Make sure you download the LTS version! Using the latest version may have uninte
 ### Git (optional)
 
 If using ubuntu or debian flavor of linux, you can obtain git by running the following command:
-```
+```sh
 sudo apt-get install git
 ```
 
 If using CentOS or similar OS, you can install it via the following command:
-```
+```sh
 sudo yum install git
 ```
 
@@ -43,7 +43,7 @@ npm install -g yarn
 *See [yarnpkg.com > Getting Started > Install](https://yarnpkg.com/getting-started/install) for more information.*
 
 Make sure to install the dependencies needed for the bot to run. You can install everything you need by running this in the project directory:
-```
+```sh
 yarn install
 ```
 
@@ -55,12 +55,12 @@ It is recommended that you set a password to the Redis database. You can do this
 
 ### PostgresSQL
 PostgresSQL is where long-term data will stay. This is where information like user settings and webhook data reside. You can install PostgresSQL [here](https://www.postgresql.org/download/). After that is installed and it has started, you can connect to it with the `postgres` user using this command:
-```
+```sh
 sudo -u postgres psql
 ```
 
 This should take you to the interactive terminal. From here you can modify the database. It is best to create a new user (with a password) and database. To do this, you can type this:
-```
+```sql
 CREATE USER tacobot WITH PASSWORD 'someOrdinaryPassword';
 CREATE DATABASE trello;
 GRANT ALL PRIVILEGES ON DATABASE trello to tacobot;

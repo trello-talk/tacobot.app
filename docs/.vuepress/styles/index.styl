@@ -1,80 +1,235 @@
+@import './animate'
+
 table
   overflow visible
 
+.animate__animated
+  animation-fill-mode both
+
 html
-  background-color $backgroundColor
+  background-color var(--primaryBG)
   #app
-    background-color $backgroundColor
-    color $textColor
-  .navbar, .sidebar, .sidebar .nav-links
-    background-color $backgroundColor
-    border-color $borderColor
+    background-color var(--primaryBG)
+    color var(--text)
   h2
-    border-color $borderColor
+    border-color var(--tertiaryBG)
+  .sidebar
+    background-color var(--secondaryBG)
+    border none
+    .nav-links
+      background-color var(--secondaryBG)
+      border-color var(--tertiaryBG)
+    &::-webkit-scrollbar-track
+      background-color var(--tertiaryBG)
+      border-radius 10px
+      border 3px solid var(--secondaryBG)
+    &::-webkit-scrollbar-thumb
+      background-color var(--primaryBG)
+      border-radius 10px
+      border 3px solid var(--secondaryBG)
   a.sidebar-link:not(.active):not(:hover)
-    color lighten($textColor, 20%)
-  table
-    tr
-      border-top 1px solid $borderColor
-      &:nth-child(2n)
-        background-color lighten($borderColor, 50%)
-    th, td
-      border 1px solid $borderColor
-      padding .6em 1em
+    color var(--secondaryText)
+  .page-nav .inner
+    border-top 1px solid var(--tertiaryBG)
+  .page-edit .edit-link a, .page-edit .last-updated .prefix
+    color var(--secondaryText)
   *::-webkit-scrollbar
     width 15px
   *::-webkit-scrollbar-track
-    background-color darken($backgroundColor, 5%)
+    background-color var(--secondaryBG)
     border-radius 10px
-    border 3px solid $backgroundColor
+    border 3px solid var(--primaryBG)
   *::-webkit-scrollbar-thumb
-    background-color darken($backgroundColor, 20%)
+    background-color var(--tertiaryBG)
     border-radius 10px
-    border 3px solid $backgroundColor
-  &.dark-theme
-    background-color $dark-backgroundColor
-    #app
-      background-color $dark-backgroundColor
-      color $dark-textColor
+    border 3px solid var(--primaryBG)
+  .theme-default-content
     code
-      color lighten($dark-accentColor, 20%)
-      background-color lighten($dark-backgroundColor, 10%)
+      color var(--secondaryText)
+      background-color var(--secondaryBG)
     table
       tr
-        border-top 1px solid $dark-borderColor
+        border-top 1px solid var(--tertiaryBG)
         &:nth-child(2n)
-          background-color lighten($dark-backgroundColor, 2%)
+          background-color var(--secondaryBG)
       th, td
-        border 1px solid $dark-borderColor
+        border 1px solid var(--tertiaryBG)
         padding .6em 1em
-    .navbar, .sidebar, .sidebar .nav-links
-      background-color $dark-backgroundColor
-      border-color $dark-borderColor
-    h2, .page-nav .inner
-      border-color $dark-borderColor
-    a.sidebar-link:not(.active):not(:hover)
-      color darken($dark-textColor, 20%)
+    [class^='language-']
+      background-color var(--text)
+  .custom-block
+    color var(--text)
+    &.tip, &.details
+      background-color var(--secondaryBG)
+      border-color var(--accent)
+      .custom-block-title
+        color var(--accent)
+    &.warning
+      background-color alpha($warning, 0.1)
+      color var(--text)
+      .custom-block-title
+        color var(--warning)
+      a
+        color var(--accent)
+    &.danger
+      background-color alpha($error, 0.1)
+      color var(--text)
+      .custom-block-title
+        color var(--error)
+      a
+        color var(--accent)
+  &.dark-theme
+    [class^='language-']
+      background-color var(--tertiaryBG)
     .nav-links a:hover, .nav-links a.router-link-active
-      color $dark-accentColor
-    .page-edit .edit-link a, .page-edit .last-updated .prefix
-      color $dark-altTextColor
-    .custom-block
-      color $dark-textColor
-      &.tip, &.details
-        background-color lighten($dark-backgroundColor, 5%)
-      &.warning
-        background-color darken(#e7c000, 80%)
-        a
-          color $dark-accentColor
-      &.danger
-        background-color #300
-        a
-          color $dark-accentColor
-    *::-webkit-scrollbar-track
-      background-color darken($dark-backgroundColor, 20%)
-      border-radius 10px
-      border 3px solid $dark-backgroundColor
-    *::-webkit-scrollbar-thumb
-      background-color darken($dark-backgroundColor, 50%)
-      border-radius 10px
-      border 3px solid $dark-backgroundColor
+      color var(--accent)
+
+// Lightbox
+.lightbox__default-loader {
+  position:absolute;
+  top:50%;
+  left:50%;
+  -webkit-transform:translate(-50%,-50%);
+  transform:translate(-50%,-50%);
+  z-index:-1
+}
+
+.lightbox__default-loader__element {
+  -webkit-animation:LightboxDefaultLoaderAnimation 1s linear infinite;
+  animation:LightboxDefaultLoaderAnimation 1s linear infinite;
+  border:3px solid #292929;
+  border-top:3px solid #fff;
+  border-radius:50%;
+  height:75px;
+  width:75px
+}
+
+@-webkit-keyframes LightboxDefaultLoaderAnimation{
+  to {
+    border-top-color:#fff;
+    -webkit-transform:rotate(1turn);
+    transform:rotate(1turn)
+  }
+}
+
+@keyframes LightboxDefaultLoaderAnimation{
+  to{
+    border-top-color:#fff;
+    -webkit-transform:rotate(1turn);
+    transform:rotate(1turn)
+  }
+}
+
+.lightbox {
+  position:fixed;
+  top: $navbarHeight;
+  left:0;
+  background:rgba(0,0,0,.8);
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-pack:center;
+  -ms-flex-pack:center;
+  justify-content:center;
+  -webkit-box-align:center;
+  -ms-flex-align:center;
+  align-items:center;
+  z-index:1
+}
+
+.lightbox__thumbnail {
+  width:100%;
+  height:100%
+}
+
+.lightbox {
+  width: 100%;
+  height: calc(100% - 3.6rem)
+}
+
+.lightbox__thumbnail img {
+  width:100%
+}
+
+.lightbox__close {
+  position:fixed;
+  right:0;
+  top: $navbarHeight;
+  padding:1rem;
+  font-size:1.5rem;
+  cursor:pointer;
+  color:#fff;
+  width:4rem;
+  height:4rem
+}
+
+.lightbox__arrow--invisible {
+  visibility:hidden
+}
+
+.lightbox__element {
+  width:100%;
+  height:-webkit-fit-content;
+  height:-moz-fit-content;
+  height:fit-content
+}
+
+.lightbox__arrow,.lightbox__element {
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex
+}
+
+.lightbox__arrow {
+  padding:0 2rem;
+  cursor:pointer;
+  -webkit-box-pack:center;
+  -ms-flex-pack:center;
+  justify-content:center;
+  -webkit-box-align:center;
+  -ms-flex-align:center;
+  align-items:center
+}
+
+.lightbox__arrow svg {
+  fill:#fff;
+  pointer-events:none
+}
+
+.lightbox__image {
+  -webkit-box-flex:1;
+  -ms-flex:1;
+  flex:1
+}
+
+.lightbox__image img{
+  width:100%;
+  height:auto!important
+}
+
+@media screen and (max-width:720px) {
+  .lightbox__arrow{
+    padding:0 1rem
+  }
+}
+
+@media screen and (max-width:500px) {
+  .lightbox__element{
+    position:relative
+  }
+  .lightbox__arrow{
+    position:absolute;
+    padding:0 2rem;
+    height:100%
+  }
+  .lightbox__arrow--right{
+    right:0;
+    background:-webkit-gradient(linear,left top,right top,from(transparent),to(rgba(0,0,0,.3)));
+    background:linear-gradient(90deg,transparent,rgba(0,0,0,.3))
+  }
+  .lightbox__arrow--left{
+    left:0;
+    background:-webkit-gradient(linear,right top,left top,from(transparent),to(rgba(0,0,0,.3)));
+    background:linear-gradient(270deg,transparent,rgba(0,0,0,.3))
+  }
+}
