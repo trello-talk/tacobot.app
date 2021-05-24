@@ -97,8 +97,7 @@ function renderScriptTypes (scriptTypes) {
     if (typeof scriptTypes[t][1] === 'string') content = scriptTypes[t][1];
     if (typeof scriptTypes[t][1] === 'object') content = JSON.stringify(scriptTypes[t][1]);
 
-    // let res = `<script data-id="${t}"`
-    let res = '<script'
+    let res = `<script data-id="${t}"`
     Object.keys(props).forEach(key => {
       res += ` ${key}="${props[key]}"`
     })
