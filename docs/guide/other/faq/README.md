@@ -1,6 +1,31 @@
 ---
 aliases:
 - /faq/
+scriptTypes:
+  faq:
+    - type: application/ld+json
+    -
+      - 
+        - How do I self-host the bot?
+        - You can look at the self-hosting instructions <a href="https://tacobot.app/guide/dev/self-host">here</a>.
+      - 
+        - How do I request deletion of my data from Trello Talk's services?
+        - You can remove your user data from Taco with the <b>T!cleardata</b> command. If you want to remove a specific server's data, you can go to the <a href="https://tacobot.app/support">support server</a>.
+      - 
+        - How can I get the best support?
+        - For support on Taco, visit the <a href="https://tacobot.app/support">support server</a>.
+      - 
+        - How do I change which channel the webhook goes to?
+        - You can do this by going into <b>Server Settings > Integrations > Webhooks</b> finding the webhook and changing the channel from there.
+      - 
+        - How do I make updates to my board send to a channel?
+        - Run <b>T!addwebhook</b> and follow the instructions.
+      - 
+        - How do I change what sends to my webhook?
+        - Use <b>T!editwebhook [webhookID] filters</b> to edit webhook filters.
+      - 
+        - What is Tali for?
+        - Tali is the renamed instance of the old Trello#5300 application. It has been repurposed into a secondary instance of Taco.
 ---
 
 # Frequently Asked Questions

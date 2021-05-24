@@ -84,4 +84,10 @@ sitemap:
       caption: Use any prefix you set it to.
     - url: https://tacobot.app/images/comment_example_original.png
       caption: Comment on anything you need input on.
+scriptTypes:
+  logo:
+    - type: application/ld+json
+    -
+      - https://tacobot.app
+      - https://tacobot.app/logo_happy.png
 ---

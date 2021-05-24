@@ -34,10 +34,10 @@ function getAliases (options, ctx) {
   return aliasArray;
 }
 
-function getAbsLink (options, ctx, link) {
-  const alias = getAliases(options, ctx).find(link => link.aliases.includes(link));
-  return alias ? alias.url : link;
-}
+// function getAbsLink (options, ctx, link) {
+//   const alias = getAliases(options, ctx).find(link => link.aliases.includes(link));
+//   return alias ? alias.url : link;
+// }
 
 module.exports = (options, ctx) => ({
   name: 'redirect-pages',

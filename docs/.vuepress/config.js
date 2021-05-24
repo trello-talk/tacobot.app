@@ -50,7 +50,7 @@ const config = {
         'webhook',
         'webhooks'
       ].join(',')
-    }],
+    }]
   ],
   plugins: [
     [
@@ -77,7 +77,7 @@ const config = {
       }
     ],
     [
-      require('./redirect.js'),
+      require('./plugins/redirect.js'),
       [
         { url: 'https://discord.com/oauth2/authorize?client_id=620126394390675466&permissions=536931392&scope=bot',
           aliases: ['/invite/', '/bot/'] },
@@ -102,7 +102,8 @@ const config = {
         { url: 'https://tacobot.app/guide/other/contact/',
           aliases: ['/contact/'] }
       ]
-    ]
+    ],
+    require('./plugins/richmeta.js')
   ],
   themeConfig: {
     search: false,
