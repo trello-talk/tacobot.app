@@ -27,7 +27,7 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "8d2d1a6695432a8d7ee8247a49b29a0f"
+    "revision": "f5367570147aa1d635718452348c0784"
   },
   {
     "url": "assets/css/0.styles.a0a5e220.css",
@@ -190,68 +190,68 @@ self.__precacheManifest = [
     "revision": "c42fcfd6a8a6508eee0aeb31f5b008cf"
   },
   {
-    "url": "assets/js/app.8d8bdfe6.js",
-    "revision": "9b8c46b291d7e24b55875727831591f1"
+    "url": "assets/js/app.6ea41d61.js",
+    "revision": "0cf334014d5f2f39f63a95f8ab1b659c"
   },
   {
     "url": "guide/commands/edit/index.html",
-    "revision": "a360b9cffcb720e502be5307a887ff41"
+    "revision": "71ed9c689895402c33b999e8e9690161"
   },
   {
     "url": "guide/commands/index.html",
-    "revision": "b1da9fd31752fbb4beae4768426b04d8"
+    "revision": "0df6d21e95fa241bc1b97c142b3d5e7d"
   },
   {
     "url": "guide/commands/viewing/index.html",
-    "revision": "9d996af4021151cb82ce0edf58d39b85"
+    "revision": "eab262d1c69cd2f498bc1eae25136bc9"
   },
   {
     "url": "guide/commands/webhooks/index.html",
-    "revision": "0a0ee15acc0dfda1ce009488ef37b0df"
+    "revision": "e9342f12c9289a56aaeed31e6a055b64"
   },
   {
     "url": "guide/dev/index.html",
-    "revision": "cebc0d3492a639f5e7cac24634d3a66f"
+    "revision": "e7496ce8238cbf9fc59103ae1849ed2f"
   },
   {
     "url": "guide/dev/self-host/index.html",
-    "revision": "ee9f1c2bc3dda31c46c9c18cb45f5665"
+    "revision": "bf4e1cd6404072a4752602803f04f0c6"
   },
   {
     "url": "guide/index.html",
-    "revision": "fbea7c12354e6cdcd3c667ee3d767243"
+    "revision": "4a9b81d96106615ac7009353c430ec61"
   },
   {
     "url": "guide/other/botlists/index.html",
-    "revision": "44e73af8ea92c4aec51a8d82f621f59e"
+    "revision": "95ec70102ea20b20269357d245bee9b5"
   },
   {
     "url": "guide/other/bots/index.html",
-    "revision": "d6dbb7bdf463bf8ea676bb19a7c40066"
+    "revision": "7938752faeb6c66acb55001e5be9717d"
   },
   {
     "url": "guide/other/contact/index.html",
-    "revision": "c6a3a019748daa2001ffbfb14ef97534"
+    "revision": "c01983b718dc74086c850b88cb8b509b"
   },
   {
     "url": "guide/other/faq/index.html",
-    "revision": "c81e0878d0fb828919899ac3f82a288e"
+    "revision": "bf8867d952628204aaf292185e72bffc"
   },
   {
     "url": "guide/other/index.html",
-    "revision": "fedeac900557f433bbe3301491aacdd0"
+    "revision": "20486ec87d57cb956107bf9ae5b26189"
   },
   {
     "url": "guide/other/privacy/index.html",
-    "revision": "92d6b86baf3ac0f42d207cdf9bd9a92a"
+    "revision": "9e6fbd9e8e1b61dd8b608ce23d7a54ba"
   },
   {
     "url": "guide/other/team/index.html",
-    "revision": "308996e0b08a4ec2dcd45b9862d55a9c"
+    "revision": "6c6ac6b8e963e79b865dded2d36d9563"
   },
   {
     "url": "guide/webhooks/index.html",
-    "revision": "a7a6680389576420cfd7eec692c80845"
+    "revision": "c245fac70addaa86fc52ac366074577a"
   },
   {
     "url": "images/addwebhook_example_original.png",
@@ -475,7 +475,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "7a7ebfe5d781505ae4fbd486ed9f6312"
+    "revision": "50dc762aeded3cf2bbda75f7c64e2d96"
   },
   {
     "url": "logo_footer.png",
