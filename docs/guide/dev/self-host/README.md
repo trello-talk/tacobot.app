@@ -5,7 +5,7 @@
 - [Git](https://git-scm.com/downloads) ([Optional](#git))
 - [Yarn](https://yarnpkg.com/) ([install](https://yarnpkg.com/getting-started/install))
 - [Redis](https://redis.io/) ([quickstart](https://redis.io/topics/quickstart))
-- [PostgresSQL](https://www.postgresql.org/) ([download & install](https://www.postgresql.org/download/))
+- [PostgreSQL](https://www.postgresql.org/) ([download & install](https://www.postgresql.org/download/))
 
 ## Installation
 
