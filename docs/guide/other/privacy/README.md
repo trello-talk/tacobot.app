@@ -5,7 +5,7 @@ aliases:
 
 # Privacy Policy
 
-By using [Taco](/) and its services, you agree to the follwing privacy policy. If you have any questions regarding policy, feel free to [contact us](/contact). **We reserve the right to change this without notifying our users.**
+By using [Taco](/) and its services, you agree to the following privacy policy, which applies to all versions of the Taco application and it's services. If you have any questions regarding policy, feel free to [contact us](/contact). **We reserve the right to change this without notifying our users.**
 
 ## When will data be stored?
 
