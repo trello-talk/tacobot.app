@@ -79,11 +79,11 @@ const config = {
     [
       require('./plugins/redirect.js'),
       [
-        { url: 'https://discord.com/oauth2/authorize?client_id=620126394390675466&permissions=536931392&scope=bot',
+        { url: 'https://discord.com/oauth2/authorize?client_id=620126394390675466&permissions=536931392&scope=bot%20applications.commands',
           aliases: ['/invite/', '/bot/'] },
-        { url: 'https://discord.com/oauth2/authorize?client_id=202929883863580673&permissions=536931392&scope=bot',
+        { url: 'https://discord.com/oauth2/authorize?client_id=202929883863580673&permissions=536931392&scope=bot%20applications.commands',
           aliases: ['/invitetwo/', '/twobot/', '/invitetali/', '/talibot/'] },
-        { url: 'https://discord.com/oauth2/authorize?client_id=617830404103077928&permissions=536931392&scope=bot',
+        { url: 'https://discord.com/oauth2/authorize?client_id=617830404103077928&permissions=536931392&scope=bot%20applications.commands',
           aliases: ['/invitenightly/', '/nightlybot/'] },
         { url: 'https://discord.gg/fJrZZ7V',
           aliases: ['/serverinvite/', '/support/', '/server/'] },
