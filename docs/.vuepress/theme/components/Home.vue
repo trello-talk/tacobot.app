@@ -99,7 +99,7 @@
     </div>
 
     <div v-animate="'fadeInUp'" class="closer">
-      <h1>Peaked your interest?</h1>
+      <h1>Piqued your interest?</h1>
       <div class="closer-buttons">
         <NavLink
           class="action-button primary"
