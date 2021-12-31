@@ -39,6 +39,60 @@
       </div>
     </header>
 
+    <icon-loading v-if="requestState === 'loading'" class="loading-stats" />
+    <div v-else-if="requestState === 'done'" class="stats-wrapper">
+      <div class="mobile-wrapper" role="list">
+        <div
+          v-animate="'flipInX'"
+          class="stat"
+          role="listitem"
+          :aria-label="`${statsData.servers.toLocaleString()} servers`"
+        >
+          <icon-servers />
+          <div class="stat-text">
+            <h2>{{ statsData.servers.toLocaleString() }}</h2>
+            <span>Servers</span>
+          </div>
+        </div>
+        <div
+          v-animate="'flipInX'"
+          class="stat"
+          role="listitem"
+          :aria-label="`${statsData.databaseUsers.toLocaleString()} Taco users`"
+        >
+          <icon-user />
+          <div class="stat-text">
+            <h2>{{ statsData.databaseUsers.toLocaleString() }}</h2>
+            <span>Taco Users</span>
+          </div>
+        </div>
+        <div
+          v-animate="'flipInX'"
+          class="stat"
+          role="listitem"
+          :aria-label="`${statsData.commandsRan.toLocaleString()} commands ran`"
+        >
+          <icon-commands />
+          <div class="stat-text">
+            <h2>{{ statsData.commandsRan.toLocaleString() }}</h2>
+            <span>Commands Ran</span>
+          </div>
+        </div>
+        <div
+          v-animate="'flipInX'"
+          class="stat"
+          role="listitem"
+          :aria-label="`${statsData.webhooks.toLocaleString()} webhooks`"
+        >
+          <icon-webhooks />
+          <div class="stat-text">
+            <h2>{{ statsData.webhooks.toLocaleString() }}</h2>
+            <span>Webhooks</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div
       v-if="data.features && data.features.length"
       class="features"
@@ -134,7 +188,9 @@ export default {
   },
   data() {
     return {
-      isMobile: globalThis.window ? globalThis.window.innerWidth < 719 : false
+      isMobile: globalThis.window ? globalThis.window.innerWidth < 719 : false,
+      requestState: 'loading',
+      statsData: null
     }
   },
   computed: {

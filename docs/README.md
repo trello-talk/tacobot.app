@@ -58,6 +58,26 @@ content:
     ogImage: /images/features/localize_repair_original.png
     details: Change the language of your webhook message and repair webhooks if anything goes wrong.
 - type: divider
+- type: main-feature-header
+  text: Manage your server and user settings with
+  title: Taco Dashboard
+  icon: tacodash
+  new: true
+- type: features
+  features:
+  - title: Clean Interface
+    image: /images/addwebhook_example.jpg
+    ogImage: /images/addwebhook_example_original.png
+    details: Enjoy the feel of managing your servers in a comfortable space.
+  - title: Multi-server Management
+    image: /images/editcard_example.jpg
+    ogImage: /images/editcard_example_original.png
+    details: Change server settings from multiple servers as well as inviting Taco to other servers.
+  - title: Edit Webhooks with Ease
+    image: /images/editwebhook_example.jpg
+    ogImage: /images/editwebhook_example_original.png
+    details: Edit webhook filters, filter items and change webhook settings from one page.
+- type: divider
 footer: true
 sitemap:
   changefreq: hourly
