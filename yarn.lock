@@ -1261,12 +1261,13 @@
   dependencies:
     nprogress "^0.2.0"
 
-"@vuepress/plugin-pwa@^1.5.0":
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/@vuepress/plugin-pwa/-/plugin-pwa-1.5.0.tgz#700ac453e1f670a662af2fbc6455b3e98488843d"
-  integrity sha512-u/LA53+HPSipcSqqut4+yUzoNUeEPiY9ZR6A1JWe6BrFl6Ec/GNHvy6h2IFdoVgMcU7A3keVEjOcFoNKUIkVEQ==
+"@vuepress/plugin-pwa@^1.9.5":
+  version "1.9.5"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-pwa/-/plugin-pwa-1.9.5.tgz#1a4d31d40121d1743c19a0539b9821addc62b4c0"
+  integrity sha512-JdvxRz+ESB2owKh9TLO+kEsPPOOATIB+Y/0LS1YZ+OsOWsgyE9/AS0EoCnvcwVn5aNw9wz95klw1s4vYCDPo/Q==
   dependencies:
-    "@vuepress/shared-utils" "1.5.0"
+    "@vuepress/shared-utils" "1.9.5"
+    "@vuepress/types" "1.9.5"
     register-service-worker "^1.7.0"
     workbox-build "^4.3.1"
 
@@ -1295,6 +1296,21 @@
     gray-matter "^4.0.1"
     hash-sum "^1.0.2"
     semver "^6.0.0"
+    upath "^1.1.0"
+
+"@vuepress/shared-utils@1.9.5":
+  version "1.9.5"
+  resolved "https://registry.yarnpkg.com/@vuepress/shared-utils/-/shared-utils-1.9.5.tgz#8c6408f65ea6ea227046a2ae34470026cc51733c"
+  integrity sha512-WA6lq5YwbG3HX3yVhMsrsw6zqDUiiMsUsBJCk/gNwbWng/NTibR/f+DkUyD/tw8fYuNu5EDK8wPn+qyLhcrjJg==
+  dependencies:
+    chalk "^2.3.2"
+    escape-html "^1.0.3"
+    fs-extra "^7.0.1"
+    globby "^9.2.0"
+    gray-matter "^4.0.1"
+    hash-sum "^1.0.2"
+    semver "^6.0.0"
+    toml "^3.0.0"
     upath "^1.1.0"
 
 "@vuepress/theme-default@1.5.0":
