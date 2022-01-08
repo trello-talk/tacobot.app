@@ -18,7 +18,7 @@
 .person
   border-radius .5em
   background-color var(--secondaryBG)
-  padding .5em
+  padding .5em 1em
   margin .5em
   display flex
   .title

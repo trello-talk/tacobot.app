@@ -26,6 +26,9 @@ scriptTypes:
       - 
         - What is Tali for?
         - Tali is the renamed instance of the old Trello#5300 application. It has been repurposed into a secondary instance of Taco.
+      - 
+        - Why did it say it couldn't find the card when I autocompleted it?
+        - This boils down to a random Discord bug that enters the <b>name</b> of the option rather than the hidden <b>value</b>. Taco will warn you of this, and you can try again later.
 ---
 
 # Frequently Asked Questions
@@ -58,4 +61,20 @@ Use `T!editwebhook [webhookID] filters` to edit webhook filters.
 
 ::: details What is Tali for?
 Tali is the renamed instance of the old Trello#5300 application. It has been repurposed into a secondary instance of Taco.
+:::
+
+::: details Why do I need to use slash commands now?
+This is a requirement for verified bots in Discord that do not utilize incoming messages for more than just command handling.
+:::
+
+::: details Why are my autocomplete results failing?
+In some cases, Taco may take longer to initially fetch your board's contents and may fail the first time autocomplete comes up. Any future searches should work after the board contents have been cached.
+:::
+
+::: details Why did it say it couldn't find the card when I autocompleted it?
+This boils down to a random Discord bug that enters the **name** of the option rather than the hidden **value**. Taco will warn you of this, and you can try again later.
+:::
+
+::: details Why isn't new updates to cards/lists/etc. showing in commands?
+Trello data within boards are cached for 3 hours and may change depending on the commands you use. Card data is cached for 30 minutes.
 :::
