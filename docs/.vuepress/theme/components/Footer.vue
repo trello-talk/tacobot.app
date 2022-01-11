@@ -3,7 +3,7 @@
     <div class="columns" v-if="config.columns && config.columns.length">
       <span class="column-opener">
         Made possible by the
-        <NavLink :item="{ text: 'Trello Talk Team', link: '/guide/other/team/' }" /> 
+        <NavLink :item="{ text: 'Taco Team', link: '/guide/other/team/' }" /> 
         using <NavLink :item="{ text: 'Node.JS', link: 'https://nodejs.org/' }" />,
         <NavLink :item="{ text: 'VuePress', link: 'https://vuepress.vuejs.org/' }" /> and love.</span>
       <div class="column" v-for="column in config.columns">
