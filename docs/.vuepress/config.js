@@ -181,7 +181,7 @@ const config = {
         'This project is licenced under the GNU General Public License v3.0.',
         'Trello Talk and the Taco Bot is not affiliated with Trello Inc. or Taco the Husky.',
         '',
-        'Copyright © 2021 Trello Talk Team'
+        'Copyright © {year} Taco Team'
       ]
     }
   }
