@@ -21,7 +21,7 @@
       </div>
     </div>
     <div class="fine-print" v-if="config.finePrints">
-      <p v-for="finePrint in config.finePrints" v-if="!!finePrint">{{ finePrint }}</p>
+      <p v-for="finePrint in config.finePrints" v-if="!!finePrint">{{ finePrint.replace('{year}', new Date().getFullYear().toString()) }}</p>
       <br v-else />
     </div>
   </div>
