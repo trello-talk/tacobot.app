@@ -1267,13 +1267,13 @@
     "@vuepress/types" "1.9.7"
     nprogress "^0.2.0"
 
-"@vuepress/plugin-pwa@^1.9.6":
-  version "1.9.6"
-  resolved "https://registry.yarnpkg.com/@vuepress/plugin-pwa/-/plugin-pwa-1.9.6.tgz#23bdc8e4205a87eccbd183c27d71ae9d9b012284"
-  integrity sha512-Vf9J+SUHczEvPemHkvC8+uozvbiG5CuEFWfShal52m6lrjuaF2R9txJ/HiwReAjYIUJmSJ7GJVTXFSl7Zuq02Q==
+"@vuepress/plugin-pwa@^1.9.7":
+  version "1.9.7"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-pwa/-/plugin-pwa-1.9.7.tgz#2f73cac25dcebb526e7fc929865ed557f61f6373"
+  integrity sha512-E8It9+Gbxuorja28Fg/3MtG5JBhdQ4XkuX65uqKl86n2uOjx50Zqndt7MWOzy9bMKzaV7gQw07UbUOMVSgKT0w==
   dependencies:
-    "@vuepress/shared-utils" "1.9.6"
-    "@vuepress/types" "1.9.6"
+    "@vuepress/shared-utils" "1.9.7"
+    "@vuepress/types" "1.9.7"
     register-service-worker "^1.7.0"
     workbox-build "^4.3.1"
 
@@ -1291,21 +1291,6 @@
   integrity sha512-MLpbUVGLxaaHEwflFxvy0pF9gypFVUT3Q9Zc6maWE+0HDWAvzMxo6GBaj6mQPwjOqNQMf4QcN3hDzAZktA+DQg==
   dependencies:
     "@vuepress/types" "1.9.7"
-
-"@vuepress/shared-utils@1.9.6":
-  version "1.9.6"
-  resolved "https://registry.yarnpkg.com/@vuepress/shared-utils/-/shared-utils-1.9.6.tgz#2c9add7d03535205b77ad6be49b911e40de44592"
-  integrity sha512-Bzn5q2Yjpji4ZF8zD9p1brTQFOTqNRCSOkoMDqR+oNt4L1SbreT08gi7BNjaeJTbNsr/S+SNSIcQHHgGO+5GOg==
-  dependencies:
-    chalk "^2.3.2"
-    escape-html "^1.0.3"
-    fs-extra "^7.0.1"
-    globby "^9.2.0"
-    gray-matter "^4.0.1"
-    hash-sum "^1.0.2"
-    semver "^6.0.0"
-    toml "^3.0.0"
-    upath "^1.1.0"
 
 "@vuepress/shared-utils@1.9.7":
   version "1.9.7"
@@ -1337,15 +1322,6 @@
     stylus-loader "^3.0.2"
     vuepress-plugin-container "^2.0.2"
     vuepress-plugin-smooth-scroll "^0.0.3"
-
-"@vuepress/types@1.9.6":
-  version "1.9.6"
-  resolved "https://registry.yarnpkg.com/@vuepress/types/-/types-1.9.6.tgz#72f27ade625a6504fa9fb14c90fe59231e89ad5f"
-  integrity sha512-xNhgCeH2/cCACeZyAXhZ2yTJcC1OsE8aBP6vIHme+69ZcpAs4ZkvAHADCrouqSzgz73IOhN1ZPV8jkMvTtyoNg==
-  dependencies:
-    "@types/markdown-it" "^10.0.0"
-    "@types/webpack-dev-server" "^3"
-    webpack-chain "^6.0.0"
 
 "@vuepress/types@1.9.7":
   version "1.9.7"
