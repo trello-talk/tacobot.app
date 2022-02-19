@@ -27,7 +27,7 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "be1fa7be71064ca9561486aeb78dabc8"
+    "revision": "96fd74611eefd22f39be2449fc10b12c"
   },
   {
     "url": "assets/css/0.styles.5a8e0a6b.css",
@@ -110,24 +110,24 @@ self.__precacheManifest = [
     "revision": "0760efdeed948985ea40ec5d4478490e"
   },
   {
-    "url": "assets/js/27.e9cc8d68.js",
-    "revision": "521b90835ff82985399a3ed1f2ebfa60"
+    "url": "assets/js/27.589a44d1.js",
+    "revision": "39dc5e8272e27c26a27878a4e8ececbd"
   },
   {
-    "url": "assets/js/28.09e498b4.js",
-    "revision": "4256bf82dafc62346763f550d61a3a5d"
+    "url": "assets/js/28.86c7898d.js",
+    "revision": "67711e76c7c6ffdf3232beea70c199ff"
   },
   {
-    "url": "assets/js/29.2ec9fe6c.js",
-    "revision": "6e33c9f510b360e2befca145771c0f2b"
+    "url": "assets/js/29.6ee9acdc.js",
+    "revision": "5559d7dc7b41186af096cc1a2cfbee76"
   },
   {
     "url": "assets/js/3.9ddbd416.js",
     "revision": "eab359d6ba666cecef1ef2e52eb1dea4"
   },
   {
-    "url": "assets/js/30.043923be.js",
-    "revision": "a41377afd7d29830d2d5c2baa626b54f"
+    "url": "assets/js/30.9c5070e6.js",
+    "revision": "b4935cf14d981f017842743366a3e53e"
   },
   {
     "url": "assets/js/31.b3929fbd.js",
@@ -198,68 +198,68 @@ self.__precacheManifest = [
     "revision": "7806f68f3dd990141bd722c87fa051d8"
   },
   {
-    "url": "assets/js/app.b32f6393.js",
-    "revision": "788a7401a3a4bdaebf6e52c69d33adac"
+    "url": "assets/js/app.9406350c.js",
+    "revision": "98cc859807f78129455ada6c198a9e6d"
   },
   {
     "url": "guide/commands/edit/index.html",
-    "revision": "73b7a81f94ee0d659a7b95b034deabfd"
+    "revision": "fb3ee703c1ee3738d63d0bac873aae26"
   },
   {
     "url": "guide/commands/index.html",
-    "revision": "d3cd58d6f4b3fe9295d3fc26eaee10ab"
+    "revision": "e0c3b7ca97421dfe3fc82dec3811c315"
   },
   {
     "url": "guide/commands/viewing/index.html",
-    "revision": "999f1d5ea44ee8ae31c77c17d7b6e444"
+    "revision": "f5772452ad43bb36a6796040d7f0201e"
   },
   {
     "url": "guide/commands/webhooks/index.html",
-    "revision": "5aa003d9992c8011584e54c10d52087a"
+    "revision": "dd2a84ec4ce313b1a12bfac29e411182"
   },
   {
     "url": "guide/dev/index.html",
-    "revision": "85570cd570418dcd364e2863ee892504"
+    "revision": "a0ddfa9478d74b67be17964274760228"
   },
   {
     "url": "guide/dev/self-host/index.html",
-    "revision": "c75dd53f55606e76ea8356051c4ffcf9"
+    "revision": "d4035a066a8a9f44246e6423c82c27f0"
   },
   {
     "url": "guide/index.html",
-    "revision": "2740491c2963c5d74971948476b64256"
+    "revision": "b7738e495e34a472ebcc09b114007f3a"
   },
   {
     "url": "guide/other/botlists/index.html",
-    "revision": "25cb56c9acd431aca54b52e16bfe13bd"
+    "revision": "8d3fdd62a6ed4930a658d3b0e023d001"
   },
   {
     "url": "guide/other/bots/index.html",
-    "revision": "aacd0abfd1d22369bebe193b24546fec"
+    "revision": "edcd870dcb6c6a64d078a68320f728fe"
   },
   {
     "url": "guide/other/contact/index.html",
-    "revision": "30696c20ceaaea01145134d7797bfa2a"
+    "revision": "d26238a46a875ad251770c124ae9883e"
   },
   {
     "url": "guide/other/faq/index.html",
-    "revision": "80aaaa8e53d8ff36af74de187b5cd057"
+    "revision": "0df1c02309c38b4e04952845ce092e70"
   },
   {
     "url": "guide/other/index.html",
-    "revision": "9e5b2f69404f2d0bd2e2c9f1ae89517a"
+    "revision": "6213c92bcd7b87ec4a279cd6d83ba9f6"
   },
   {
     "url": "guide/other/privacy/index.html",
-    "revision": "1125f828cdf9bc59c78ad8ae436cd382"
+    "revision": "17b38ec52fb43dd7ea465bd929682354"
   },
   {
     "url": "guide/other/team/index.html",
-    "revision": "08c76bdd07cb669f746cfeb1cb3cca46"
+    "revision": "f7fd9c61a0bdaf689f85c89b7234e2c2"
   },
   {
     "url": "guide/webhooks/index.html",
-    "revision": "30ae64f6061b539fa8eeb1142d890fdd"
+    "revision": "e57f704496de73fcf893ea7f9a7fc6a9"
   },
   {
     "url": "images/addwebhook_example_original.png",
@@ -483,7 +483,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "a0fd985d032d2aa23d7c2c28a885612e"
+    "revision": "6d6862b0a7c4df669ed00bd0ae4dabee"
   },
   {
     "url": "logo_footer.png",
