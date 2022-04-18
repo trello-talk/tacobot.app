@@ -2,7 +2,7 @@
   "devDependencies": {
     "@vuepress/plugin-google-analytics": "^1.9.7",
     "@vuepress/plugin-pwa": "^1.9.7",
-    "fs-extra": "^10.0.1",
+    "fs-extra": "^10.1.0",
     "vue-carousel": "^0.18.0",
     "vuepress": "^1.9.7",
     "vuepress-plugin-sitemap": "^2.3.1",
