@@ -6,7 +6,7 @@ In order to manage webhooks, you must either have a role with the name `Trello`,
 
 ## Adding a webhook
 
-You can start adding a webhook by using the `T!addwebhook` command. After selecting a board, you will be prompted to either link an existing Discord webhook or create one.
+You can start adding a webhook by using the `/webhook add` command. After selecting a board, you will be prompted to either link an existing Discord webhook or create one.
 
 <MarkdownImage
   src="/images/addwebhook_example2.jpg"
@@ -19,13 +19,13 @@ After creating a webhook, a message will be sent on the new webhook confirming t
   original="/images/addwebhook_example_original.png" />
 
 ## Viewing webhooks
-To see a list of webhooks on a server, use the `T!webhooks` command in a Discord guild.
+To see a list of webhooks on a server, use the `/webhooks` command in a Discord guild.
 
 <MarkdownImage
   src="/images/webhooks_example.jpg"
   original="/images/webhooks_example_original.png" />
 
-To view a webhook, use the `T!webhook` command with the webhook's ID. (i.e. `T!webhook 24`)
+To view a webhook, use the `/webhook` command with the webhook's ID. (i.e. `/webhook view webhook:24`)
 
 <MarkdownImage
   src="/images/webhook_example.jpg"
@@ -68,7 +68,7 @@ By default, there are 31 default filters for every newly created webhook. Not al
 - UPDATE_LIST_CLOSED
 :::
 
-You can change the way your webhook operates with the `T!editwebhook` command. From here you can change:
+You can change the way your webhook operates with the `/webhook set` command. From here you can change:
 - Webhook filters
 - The locale of the webhook
 - Whether the webhook is actively sending events or not
@@ -101,4 +101,4 @@ The "repair webhook" option will fix the following:
 - The internal webhook is not activated
 
 ## Removing a webhook
-You can remove a webhook with the `T!remwebhook` command followed by the ID of the webhook. (i.e. `T!remwebhook 24`)
+You can remove a webhook with the `/webhook delete` command followed by the ID of the webhook. (i.e. `/webhook delete webhook:24`)

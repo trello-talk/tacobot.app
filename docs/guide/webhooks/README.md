@@ -13,7 +13,7 @@ Webhooks are a way to get messages/notifications through discord, about any chan
 
 FIrst of all, [make sure that you Trello account has been connected](/guide/#authentication). In order to create a webhook, you must either have a role with the name `Trello`, or have administrator privileges.
 
-To start creating a webhook, you can use the `T!addwebhook` command and select a board you want updates in. After you have selected a board, you can choose which webhook you want to use to send updates to or create one from scratch.
+To start creating a webhook, you can use the `/webhook add` command and select a board you want updates in. After you have selected a board, you can choose which webhook you want to use to send updates to or create one from scratch.
 
 <MarkdownImage
   src="/images/addwebhook_example2.jpg"
