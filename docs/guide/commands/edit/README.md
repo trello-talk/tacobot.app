@@ -1,7 +1,7 @@
 # Editing on Taco
 
 ## Editing boards
-You can edit boards via the `T!editboard` command. You can edit the following from Trello boards:
+You can edit boards via the `/edit-board` command. You can edit the following from Trello boards:
 - Edit/Remove description
 - Archive the board
 - Name

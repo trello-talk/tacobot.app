@@ -55,4 +55,4 @@ Certain user data (user IDs, trello boards, etc.) will only be shown if the user
 Data shared with Trello includes request made on behalf of Discord users (e.g. creating cards, permissions to edit) and information such as various IDs that is paired with the request to do actions within Trello. (e.g. card creations will use board IDs and list IDs, etc.)
 
 ## How can I have my data removed?
-You can remove your user data anywhere from Taco with the `T!cleardata` command. If you want to remove a server's data from the database, you can [contact](/contact) for removal.
+You can remove your user data anywhere from Taco with the `/clear-data` command. If you want to remove a server's data from the database, you can [contact](/contact) for removal.

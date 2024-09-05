@@ -29,16 +29,6 @@ sitemap:
 </Person>
 
 <Person
-  avatar="/tali.svg"
-  imageClass="large"
-  name="Tali"
-  subtitle="The secondary instance of Taco Bot. (formerly Trello#5300)">
-
-- [Invite](/talibot)
-
-</Person>
-
-<Person
   avatar="/logo_nightly_happy.svg"
   imageClass="large"
   name="Taco Nightly"

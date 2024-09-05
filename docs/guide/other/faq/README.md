@@ -10,7 +10,7 @@ scriptTypes:
         - You can look at the self-hosting instructions <a href="https://tacobot.app/guide/dev/self-host">here</a>.
       - 
         - How do I request deletion of my data from Trello Talk's services?
-        - You can remove your user data from Taco with the <b>T!cleardata</b> command. If you want to remove a specific server's data, you can go to the <a href="https://tacobot.app/support">support server</a>.
+        - You can remove your user data from Taco with the <b>/clear-data</b> command. If you want to remove a specific server's data, you can go to the <a href="https://tacobot.app/support">support server</a>.
       - 
         - How can I get the best support?
         - For support on Taco, visit the <a href="https://tacobot.app/support">support server</a>.
@@ -19,13 +19,10 @@ scriptTypes:
         - You can do this by going into <b>Server Settings > Integrations > Webhooks</b> finding the webhook and changing the channel from there.
       - 
         - How do I make updates to my board send to a channel?
-        - Run <b>T!addwebhook</b> and follow the instructions.
+        - Run <b>/webhook add</b> with a given board and webhook name.
       - 
         - How do I change what sends to my webhook?
-        - Use <b>T!editwebhook [webhookID] filters</b> to edit webhook filters.
-      - 
-        - What is Tali for?
-        - Tali is the renamed instance of the old Trello#5300 application. It has been repurposed into a secondary instance of Taco.
+        - Use <b>/webhook set filters</b> to edit a webhook's filters.
       - 
         - Why did it say it couldn't find the card when I autocompleted it?
         - This boils down to a random Discord bug that enters the <b>name</b> of the option rather than the hidden <b>value</b>. Taco will warn you of this, and you can try again later.
@@ -40,7 +37,7 @@ You can look at the self-hosting instructions [here](/guide/dev/self-host).
 :::
 
 ::: details How do I request deletion of my data from Trello Talk's services?
-You can remove your user data from Taco with the `T!cleardata` command. If you want to remove a specific server's data, you can go to the [support server](/support).
+You can remove your user data from Taco with the `/clear-data` command. If you want to remove a specific server's data, you can go to the [support server](/support).
 :::
 
 ::: details How can I get the best support?
@@ -52,15 +49,11 @@ You can do this by going into `Server Settings > Integrations > Webhooks` findin
 :::
 
 ::: details How do I make updates to my board send to a channel?
-Run `T!addwebhook` and follow the instructions.
+Run `/webhook add` with a given board and webhook name.
 :::
 
 ::: details How do I change what sends to my webhook?
-Use `T!editwebhook [webhookID] filters` to edit webhook filters.
-:::
-
-::: details What is Tali for?
-Tali is the renamed instance of the old Trello#5300 application. It has been repurposed into a secondary instance of Taco.
+Use `/webhook set filters` to edit a webhook's filters.
 :::
 
 ::: details Why do I need to use slash commands now?
@@ -76,5 +69,5 @@ This boils down to a random Discord bug that enters the **name** of the option r
 :::
 
 ::: details Why isn't new updates to cards/lists/etc. showing in commands?
-Trello data within boards are cached for 3 hours and may change depending on the commands you use. Card data is cached for 30 minutes.
+Trello data within boards are cached for up to 2 minutes and may change depending on the commands you use. Card data is cached for 5 minutes.
 :::

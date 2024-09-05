@@ -11,10 +11,10 @@ Head to our Support discord and either a volunteer support member or a team memb
 :::
 
 ::: warning Want to request a deletion of your data?
-You can remove your user data from Taco with the `T!cleardata` command. If you want to remove a specific server's data, you can go to the [support server](/support).
+You can remove your user data from Taco with the `/clear-data` command. If you want to remove a specific server's data, you can go to the [support server](/support).
 You can also send the team an email at contact@tacobot.app
 :::
 
 ::: danger Reporting A Security Concern/Vulnerability?
-DM Coolguy3289#2290 in the [support server](/support) or email the team directly at contact@tacobot.app.
+DM @Coolguy3289 in the [support server](/support) or email the team directly at contact@tacobot.app.
 :::
