@@ -26,11 +26,12 @@ In order to have the best user experience, Taco should have the following permis
 
 You can see the available commands you can use by typing `/help` or going to the [commands list](/commands) on the website.
 
-## The Trello Role (optional)
+## Management Roles (optional)
 
-Certain commands such as the Webhook related commands are role limited. To restrict who can use these commands, the bot looks for a Trello role on a server or for a user with Administrator permissions. If a user doesn't have that role, they will be unable to run those commands. 
-The role needs no permissions, so long as it has the name "Trello".
+Certain commands such as the Webhook related commands are role limited. To restrict who can use these commands, there are management roles that can be assigned by people with the `Manage Server` permission on the server. To set a role that can set webnhooks, run the `/server-settings role` command.
 
+## User App Commands
+You can now access your Trello boards from anywhere in Discord! You can [add Taco to your account](https://discord.com/oauth2/authorize?client_id=620126394390675466&integration_type=1&scope=applications.commands). This way, you can view boards and cards in any channel.
 
 ## Authentication
 ::: warning
