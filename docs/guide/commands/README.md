@@ -33,7 +33,7 @@ aliases:
 | Command     | Description |
 | ----------- | ----------- |
 | **`/webhook add`** *`[boardID|boardName]`* | Creates a webhook on your server. |
-| **`/webhook set <active|name|locale|filter_policy|style|filters|cards|lists>`** *`<webhookID>`* | Edits a webhook's settings. |
+| **`/webhook set <active|name|locale|filter_policy|style|filters|cards|lists|thread>`** *`<webhookID>`* | Edits a webhook's settings. |
 | **`/webhook delete`** *`<webhookID>`* | Removes a webhook from your server. |
 | **`/webhook view`** *`<webhookID>`* | Get information about a specific webhook. |
 | **`/webhook list`** | Lists the webhooks on your server. |
